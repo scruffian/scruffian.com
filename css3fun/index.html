@@ -1,0 +1,146 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Demo</title>
+  <style type="text/css" media="screen">
+  	html, body {
+  		height: 100%;
+  	}
+    body {
+    	background: #000;
+    	color:#fff;
+    	margin:0;
+    	padding: 0;
+    }
+    @-webkit-keyframes hide {
+      from { top: 0; }
+      to   { top: -1000px; }
+    }
+    @-webkit-keyframes spin {
+      from { -webkit-transform: rotateY(0deg); }
+      to   { -webkit-transform: rotateY(360deg); }
+    }
+    @-webkit-keyframes unspin {
+      from { -webkit-transform: rotateY(360deg); }
+      to   { -webkit-transform: rotateY(0deg); }
+    }
+	div{-webkit-transform-style: preserve-3d;}
+	.note{-webkit-animation: hide .001s infinite linear; position: absolute; }
+    #container {
+		position: relative;
+		top:50%;
+		left:50%;
+		height: 1px;
+		width: 1px;
+		-webkit-perspective:220;
+		-webkit-transform-origin: 50% 50%;
+    }
+	.particle-wrapper {
+		position:absolute;
+	    -webkit-animation: spin 4s infinite linear;
+	}
+	.particle {
+		position: absolute;
+		top:0;
+		left: 0;
+	}
+	.inner-particle {
+		background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,255,0.9)), color-stop(0,rgba(255,255,255,0.9)), color-stop(0.12,rgba(239,196,151,0.9)), color-stop(0.18, rgba(246,39,52,0.3)), color-stop(0.3, rgba(114,44,33,0.3)), color-stop(0.5, rgba(108,39,30,0.1)), color-stop(0.55, rgba(0,0,0,0)), to(rgba(0,0,0,0)));
+		width: 100px;
+		height: 100px;
+		border-radius: 25px;
+		-webkit-animation: unspin 4s infinite linear;		
+	}
+	.inner-particle .inner-particle {
+		background: none;
+		-webkit-animation: none;		
+	}
+
+    .bubbles #container {
+		-webkit-perspective:500;
+    }
+	.bubbles .inner-particle {
+		background-color: #1a82f7;
+		background: -webkit-gradient(radial, center center, 0, center center, 70, from(#000), to(#fff));
+		width: 50px;
+		height: 50px;
+		opacity: .5;
+		border-radius: 25px;
+		-webkit-animation: unspin 4s infinite linear;		
+	}
+	.bubbles .inner-particle .inner-particle {
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#000));
+		opacity: .3;
+		-webkit-animation: none;		
+	}
+
+    .planets #container {
+		-webkit-perspective:500;
+    }
+	.planets .inner-particle {
+		background-color: #1a82f7;
+		background: -webkit-gradient(radial, center center, 0, center center, 70, from(#000), to(#fff));
+		width: 50px;
+		height: 50px;
+		opacity: .8;
+		border-radius: 25px;
+		-webkit-animation: unspin 4s infinite linear;		
+	}
+	.planets .inner-particle .inner-particle {
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#000));
+		-webkit-animation: none;		
+	}
+	</style>
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+</script>
+</head>
+<body id="body">
+	<div class="note">This demo will probably only work in the latest version of Safari on Snow Leopard.</div>
+	<div id="container">
+	<script>
+	var loop;
+	var particles = '';
+	for (loop = 0; loop < 100; loop++) {
+		var rotate = Math.random() * 360;
+		var left = ( Math.random() - 0.5 ) * 360;
+		var topPos = ( Math.random() - 0.5 ) * 400;
+
+		if ( getParameterByName( 'bubbles' ) != null ) {
+			document.getElementById('body').className = 'bubbles';
+			left = ( Math.random() - 0.5 ) * 700;
+			topPos = ( Math.random() - 0.5 ) * 600;
+		}
+
+		if ( getParameterByName( 'planets' ) != null ) {
+			document.getElementById('body').className = 'planets';
+			left = ( Math.random() - 0.5 ) * 700;
+			topPos = ( Math.random() - 0.5 ) * 600;
+		}
+
+		particles += '<div class="particle-wrapper">';
+		particles += '<div style="-webkit-transform: rotateY(' + rotate + 'deg);">';
+		particles += '<div class="particle" style="left: ' + left + 'px;  top: ' + topPos + 'px;">';
+		particles += '<div style="-webkit-transform: rotateY(-' + rotate + 'deg);">';
+		particles += '<div class="inner-particle">';
+		particles += '<div class="inner-particle"></div>';
+		particles += '</div>';
+		particles += '</div>';
+		particles += '</div>';
+		particles += '</div>';
+		particles += '</div>';
+	}
+	document.write( particles );
+	</script>
+	</div>
+</body>
+</html>
