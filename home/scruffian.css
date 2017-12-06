@@ -1,0 +1,129 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(background.jpg);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Georgia, serif;
+  font-size: 1.4em;
+  overflow: hidden;
+  /* needed to eliminate scrollbars caused by the background image */
+
+  padding: 0;
+  margin: 0;
+  /* necesarry for the raster to fill the screen */
+
+  height: 100%;
+  width: 100%;
+}
+#bgimg {
+  position: absolute;
+  z-index: -1;
+}
+#realBody {
+  position: absolute;
+  z-index: 5;
+  /* Place the new body above the background image */
+
+  overflow: auto;
+  /* restore scrollbars for the content */
+
+  height: 100%;
+  width: 100%;
+  /* Make the new body fill the screen */
+
+  text-align: center;
+
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2 {
+  font-weight: normal;
+  line-height: 1em;
+}
+h1 {
+  font-size: 3em;
+}
+h1 span {
+  opacity: .1;
+}
+h2 {
+  margin-bottom: 1em;
+}
+
+@media ( min-width: 601px ) {
+	.content-wrapper {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+}
+
+.content-wrapper .content {
+	margin: 0 auto;
+	max-width: 600px;
+}
+.content-wrapper .content p {
+  text-align: left;
+}
+
+.text {
+	background: rgba( 255, 255, 255, .3 );
+	color: #333;
+	display: none;
+	margin-bottom: 1em;
+	opacity: .6;
+	padding: 1em;
+}
+
+#listen {
+	background: none;
+	display: block;
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+@media ( min-width: 601px ) {
+	.text {
+		margin-top: 30px;
+	}
+}
+
+.text a {
+	color: #333;
+}
+
+.background {
+  position: fixed;
+}
+
+
+.links {
+	opacity: .7;
+	text-align: center;
+}
+
+
+.iframe {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.links a {
+	margin: 10px 20px;
+}
+
+@media ( max-width: 600px ) {
+	.links a {
+		display: block;
+	}
+}

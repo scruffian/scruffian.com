@@ -1,0 +1,86 @@
+* {
+	border:none;
+	margin:0;
+	padding:0;
+}
+body {
+	background: url(images/background.jpg);
+	color: rgba(0,0,0,.6);
+	font-family: Georgia, serif;
+	font-size: 1.4em;
+	overflow:hidden; 		/* needed to eliminate scrollbars caused by the background image */
+	padding:0;margin:0;		/* necesarry for the raster to fill the screen */
+	height:100%;width:100%;
+}
+#bgimg {
+	position:absolute;
+	z-index: -1;
+}
+#realBody{
+	position:absolute;
+	z-index: 5;				/* Place the new body above the background image */
+	overflow:auto; 			/* restore scrollbars for the content */
+	height:100%;width:100%;	/* Make the new body fill the screen */
+}
+a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+h1, h2 {
+	font-weight: normal;
+	line-height: 1em;
+}
+h1 {
+	font-size: 3em;
+	span {
+		opacity: .1;
+	}
+}
+h2 {
+	color: rgba(0,0,0,.5);
+	margin-bottom: 1em;
+}
+.content-wrapper {
+	box-shadow: 0 0 50px -25px #000;
+	border-radius: 10px;
+	margin: 3% auto 80px 3%;
+	min-width: 320px;
+	width: 45%;
+	.content {
+		background-image: url(images/header-texture.png);
+		background-color: rgba(255,240,210,.7);
+	    box-shadow: 0 0 20px 0 #000 inset;
+		border-radius: 20px;
+		padding: 30px;
+		p {
+			text-align:left;
+		}		
+	}
+}
+.footer {
+	background-color: rgba(55,40,10,.8);
+	background-image: url(images/header-texture.png);
+	box-shadow: 0 10px 30px -5px rgba(0,0,0,.9) inset;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index:1;
+	ul.social {
+		float: right;
+		list-style:none;
+		li {
+			float: left;
+			padding: 10px;
+			a {
+				display: block;
+			}
+		}
+	}
+}
+#background {
+	position:fixed;
+}
