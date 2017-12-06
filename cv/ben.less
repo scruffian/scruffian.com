@@ -1,0 +1,184 @@
+@mobile-width: 520px;
+* {
+	border: none;
+	margin:0;
+	padding:0;
+}
+html {
+	background: #f5f5f5;
+	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+body{
+	background:#fff;
+	color:#333;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	margin: 1em;
+	padding: 1em;
+	position: relative;
+	text-align:left;
+}
+@media (min-width: @mobile-width) {
+	body {
+		font-size: 1em;
+		padding: 2em;
+	}
+}
+@media (min-width: 1025px) {
+	body {
+		font-size: 1.4em;
+		margin: 2em;
+		padding: 2em;
+	}
+}
+a {
+	color: #99ccff;
+	text-decoration: none;
+}
+.page-break {
+	page-break-before: always;
+}
+h1 {
+	margin:0;
+}
+h2 {
+	border-top: 1px solid #ccc;
+	clear: both;
+	color:#999;
+	font-size:1.3em;
+	font-weight: bold;
+	margin: 1em 0 0 0;
+	padding: 1em 0 0 0;
+}
+h3 {
+	border-top: 1px dashed #ccc;
+	color: #666;
+	font-size: 1.3em;
+	margin: 1em 0 0 0;
+	padding: 1em 0 0 0;
+}
+h4 {
+	font-weight:normal;
+	position:relative;
+}
+h5 {
+	font-size: 1em;
+	font-weight:bold;
+	text-align:right;
+}
+ul {
+	li {
+		list-style-position:outside;
+		list-style-type:disc;
+		margin: 0 0 0 1em;
+		li {
+			list-style-type: circle;
+		}
+	}
+}
+p {
+	margin-bottom: 1em;
+	&:last-child {
+		margin: 0;
+	}
+}
+/*.vcard-placeholder {
+	height: 350px;
+}
+.vcard-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}*/
+.vcard {
+	//background: #fff;
+	overflow: hidden;
+	//margin: 2em;
+	//padding: 2em;
+	position: relative;
+	h1 {
+		border-bottom: 1px solid #000;
+		margin-bottom: .3em;
+		padding-bottom: .3em;
+	}
+	h2 {
+		background: none;
+		border: none; color:#999;
+		float: left;
+		margin: 0 0 .5em 0;
+		padding: 0;
+	}
+	> ul {
+		clear: both;
+		color: #ccc;
+		position: relative;
+		li {
+			line-height:1.2em;
+			list-style: none;
+			margin:0;
+			padding:0
+		}
+	}
+	.pdf	{
+		line-height:1.2em;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+	@media (min-width: @mobile-width) {
+		> ul {
+			clear: none;
+			text-align:right;
+		}
+	}
+	@media (min-width: 900px) {
+		h1 {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 1.3em;
+		}
+		> ul {
+			font-size: 1em;
+		}
+	}
+}
+ul.skills {
+	> li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		h3 {
+			border: none;
+			font-size: 1.1em;
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			padding: 0 2em 2em 0;
+		}
+		li {
+			list-style-type: disc;
+		}
+	}
+	@media (min-width: @mobile-width) {
+		> li {
+			float: left;
+			width: 33%;
+		}
+	}
+}
+div.experience {
+	position:relative;
+	h4 {
+		overflow: hidden;
+		.date {
+			color: #aaa;
+			float: right;
+		}
+	}
+}
