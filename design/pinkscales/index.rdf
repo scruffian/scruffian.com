@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:cc="http://web.resource.org/cc/"
+xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.scruffian.com/pinkscales2/">
+<title>Pink Scales2</title>
+<link>http://www.scruffian.com/pinkscales2/</link>
+<description>Welcome to the Pink Scales Group website www.pinkscales.com. The Pink Scales Group of companies provide services to the music industry and artists alike. It is our aim to be the first choice for your project however big or small. Pink Scales is different, we are a collaboration of music industry professionals and artists with many years of experience and success, brought together to provide a better service for you.</description>
+<dc:creator></dc:creator>
+<dc:date>2005-04-08T15:45:55+00:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.121" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/news/index.html#000170" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/downloads/index.html#000179" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/downloads/index.html#000181" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/downloads/index.html#000180" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/downloads/index.html#000178" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/services/index.html#000176" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/services/index.html#000175" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/services/index.html#000174" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/services/index.html#000173" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/news/index.html#000172" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/news/index.html#000171" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/filmscores/index.html#000177" />
+<rdf:li rdf:resource="http://www.scruffian.com/pinkscales2/contact/index.html#000182" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://www.scruffian.com/pinkscales2/news/index.html#000170">
+<title>Star Academy 4</title>
+<link>http://www.scruffian.com/pinkscales2/news/index.html#000170</link>
+<description><![CDATA[<p>David Coulommiers has recently contributed to two major, top-selling albums in France. Star Academy 4 (Universal/Mercury) has been a huge success and allowed David to show his innovative programming to its full. Using old and new musical technology, he has strengthened and added his unique touches to both albums. </p>
+
+<p>Earlier this year, David also added his signature programming to the Elodie Fregé, platinum-selling album, <br />
+</p>]]></description>
+<dc:subject>news</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T15:45:55+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/downloads/index.html#000179">
+<title>In-house project. (DC/MW/G)</title>
+<link>http://www.scruffian.com/pinkscales2/downloads/index.html#000179</link>
+<description><![CDATA[<p>The latest inhouse project from Pink Scales has a dark, artistic feel. Influenced by the likes of Massive Attack and Bjork, it goes to the next level and takes on a highly unique life of its own.</p>
+
+<p>Finally<br />
+Little India<br />
+</p>]]></description>
+<dc:subject>downloads</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T12:30:08+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/downloads/index.html#000181">
+<title>Programming. (DC)</title>
+<link>http://www.scruffian.com/pinkscales2/downloads/index.html#000181</link>
+<description><![CDATA[<p>Examples of the unique vibe David brings to his songs, including his highly original string arrangements. </p>
+
+<p>Elodie Frégé - winner Star Academy 3 - Platinum selling album.<br />
+Faire Semblant<br />
+Moins De Toi</p>]]></description>
+<dc:subject>downloads</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:21:25+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/downloads/index.html#000180">
+<title>Writing/Programming. (DC/MW)</title>
+<link>http://www.scruffian.com/pinkscales2/downloads/index.html#000180</link>
+<description><![CDATA[<p>Examples of recent works undertaken for clients where versatility extends across a broad range of musical styles.</p>
+
+<p>Sugar High<br />
+Wish You Well</p>]]></description>
+<dc:subject>downloads</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:21:00+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/downloads/index.html#000178">
+<title>Film scores. (DC)</title>
+<link>http://www.scruffian.com/pinkscales2/downloads/index.html#000178</link>
+<description><![CDATA[<p>Inventive programming, arranging and composing, produced using both digital and traditional tools.</p>
+
+<p>Cybernetica<br />
+Alone<br />
+The Knife<br />
+</p>]]></description>
+<dc:subject>downloads</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:19:41+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/services/index.html#000176">
+<title>David Coulommiers - Programmer/writer/producer</title>
+<link>http://www.scruffian.com/pinkscales2/services/index.html#000176</link>
+<description><![CDATA[<p>David is a highly innovative programmer and has worked extensively in this area, contributing to works by a broad range of artists including Elodie Fregé (UniversalMercury), Star Academy France, Shaggy, Ste McNally, BBMAK etc. His studio houses an impressive programming/recording rig along with David's vintage synths which include Fender Rhodes, MiniMoogs , MS20, TB303,VCS-3 Putney,CS-80 etc which he uses to create his innovative sound. He is highly skilled with all todays sampling technology, of which he also has a vast library. Sound Design, incorporating Symphonic Orchestral works show his amazing talents to their full - David has a complete PRO VSL station and also uses Miroslave Vitous and EWQL Symphonic Orchestra. Established in his native France as a gifted writer, he has worked on many sountrack projects, including work for Buena Vista (ABC, Disney) showcasing his signature orchestral/string arrangements. During the last year he has contributed to several 'number one' selling albums and is now concentrating on production and artist development.</p>]]></description>
+<dc:subject>services</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:15:19+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/services/index.html#000175">
+<title>Max Wilson - Writer/Instrumentalist/Producer.</title>
+<link>http://www.scruffian.com/pinkscales2/services/index.html#000175</link>
+<description><![CDATA[<p>Prior to joining Pink scales, Max has been working with well-known producers, programmers, writers and performers, including James Sanger (Keane, Dido, Phil Collins, U2) honing her talents. As one of Pink Scales most experienced members she is a prolific and highly talented songwriter. Max, who is also an accomplished instrumentalist, has completed the recording of her second album and is now concentrating on artist development.</p>]]></description>
+<dc:subject>services</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:14:51+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/services/index.html#000174">
+<title>Gabriel - Programmer.</title>
+<link>http://www.scruffian.com/pinkscales2/services/index.html#000174</link>
+<description><![CDATA[<p>Also an accomplished solo performer and DJ, Gabriel uses a classic electronic style in his signature programming work and re-mixing and shows amazing artistic insight. He is also a budding writer and enjoys contributing to sound-track projects currently in production. </p>
+
+<p>Gabriel's arrival at the Pink Scales Studios has given a whole new dimension to our programming team. His highly unique trademark samples/sounds bring a fresh approach to all his works.</p>]]></description>
+<dc:subject>services</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:14:18+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/services/index.html#000173">
+<title>Cray Newman - Sound Engineer/Technician.</title>
+<link>http://www.scruffian.com/pinkscales2/services/index.html#000173</link>
+<description><![CDATA[<p>Cray is a highly talented and experienced sound engineer and technician. He is proficient with all major software packages and owns a portable Pro-Tools rig. </p>
+
+<p>Cray has been working on projects around the UK for the last few years and is a regular choice for our clients.</p>]]></description>
+<dc:subject>services</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:13:41+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/news/index.html#000172">
+<title>Artist Development</title>
+<link>http://www.scruffian.com/pinkscales2/news/index.html#000172</link>
+<description><![CDATA[<p>New to the Pink Scales family is Ollie Hughes.</p>
+
+<p>Ollie is a very talented writer, performer and multi instrumentalist. We are currently busy recording his first solo album and have signed him to a two year development deal.</p>
+
+<p>Finally, we would like to wish you a very happy Christmas and peaceful New Year.</p>]]></description>
+<dc:subject>news</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:12:29+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/news/index.html#000171">
+<title>Pink Scales Studio </title>
+<link>http://www.scruffian.com/pinkscales2/news/index.html#000171</link>
+<description><![CDATA[<p>The new Pink Scales studios are nearing completion. They will house a complete Protools HD system along with a further two Protools and Motu HD192. The new creative studios combines both the newest technology with vintage sounds, to create the ultimate recording and programming experience. Superb sound quality in a highly creative and beautiful environment.</p>]]></description>
+<dc:subject>news</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-04-08T10:12:12+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/filmscores/index.html#000177">
+<title>Film Scores</title>
+<link>http://www.scruffian.com/pinkscales2/filmscores/index.html#000177</link>
+<description><![CDATA[<p>Here at Pink Scales, we have a keen interest in the creation of scores for film, television and video games. Utilising the latest technology we can compose and produce professional scores for any project. <br />
+ <br />
+"the mind is free to explore and invent, boundaries disappear allowing original themes to emerge, taking us along a parallel journey with the visual".....GB  <br />
+Many examples of film-score projects can be on our downloads page. <br />
+</p>]]></description>
+<dc:subject>filmscores</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-02-02T10:18:56+00:00</dc:date>
+</item>
+<item rdf:about="http://www.scruffian.com/pinkscales2/contact/index.html#000182">
+<title>Contact</title>
+<link>http://www.scruffian.com/pinkscales2/contact/index.html#000182</link>
+<description><![CDATA[<p>We are happy to receive demos. Please e-mail us first and we will forward postal details.<br />
+info@pinkscales.com</p>]]></description>
+<dc:subject>contact</dc:subject>
+<dc:creator>scruffian</dc:creator>
+<dc:date>2005-01-01T10:22:00+00:00</dc:date>
+</item>
+
+
+</rdf:RDF>

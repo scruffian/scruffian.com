@@ -1,0 +1,643 @@
+BODY{
+	overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+    font-size: 13px;
+}
+
+A{
+    font-family: Arial, Helvetica, Sans-Serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+A.MENU{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+A.MENU:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background-color: #DA6622;
+    border-color: #FFFFFF;
+    font-size: 12px;
+}
+
+.newmenu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    /*color: #000060;*/
+    color:#000000;
+    font-size: 11px;
+}
+
+.newmenu:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #CD4F11;/*DA6622;*/
+    border-color: #FFFFFF;
+    font-size: 11px;
+}
+
+A.topmenu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    /*color: #FCA703;*/
+    color:#000000;
+    font-size: 11px;
+}
+
+A.topmenu:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /*font-weight: bold;
+    color: #FFFFFF;
+    background-color: #DA6622;
+    border-color: #FFFFFF;
+    */
+    color:#000000;
+    font-size: 11px;
+}
+
+A.ARROW{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size:12px;
+}
+A.CALL{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    /*color: #FFF200;*/
+    color:#FDC65A;
+    font-size:17px;
+}
+A.CALL:hover{
+    font-weight: bolder;
+    /*color: #FFF200;*/
+    color:#FDC65A;
+    text-decoration: underline overline;
+}
+
+A.FRIEND{
+    font-family: Arial,Tahoma, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #FFCC00;
+    font-size:11px;
+}
+A.FRIEND:hover{
+    font-family: Arial,Tahoma, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #FFCC00;
+    font-size:11px;
+    text-decoration: underline overline;
+}
+
+A.STANDART{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size:10px;
+}
+
+A.STANDART:hover{
+    color: #EA6727;
+    text-decoration: underline overline;
+    font-size:10px;
+}
+
+A.SELECTED{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #990000;
+    font-size:11px;
+}
+
+A.SELECTED:hover{
+    color: #EA6727;
+    font-weight: bold;
+    text-decoration: underline overline;
+    font-size:11px;
+}
+
+INPUT{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #000000;
+    border-color: #FFCC99;
+}
+
+SELECT{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #000000;
+    border-color: #FFCC99;
+    background-color: #FBF5D7;
+}
+
+A:hover{
+    color: #EA6727;
+    text-decoration: underline overline;
+}
+
+A:hover.productmenu{
+    text-decoration: none;
+}
+
+.topmenu_sel{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    color: #FCA703;/*#A33D01;*/
+    font-size: 11px;
+}
+
+.simple{
+    font-family: Arial, Helvetica, Sans-Serif;
+    /*font-size: 10px;*/
+    font-size:11px;
+    font-weight:bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+.simplew{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.simplewr{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 10px;
+    text-decoration: none;
+    color: #DBE6B8;
+}
+
+.simpleform{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: #000000;
+    border-color: #FFCC99;
+    background-color: #FBF5D7;
+    padding:0px;
+    font-weight:normal;
+}
+
+.d_article_menu{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.a_article_menu{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #A33D01;
+}
+
+.productmenu{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000063;
+}
+
+.aproductmenu{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #222222;
+}
+
+IMG.menuPictureNR{
+    border-style: solid;
+    border-color: #000000;
+}
+
+IMG.menuPictureHL{
+    border-style: solid;
+    border-color: #FCA703;
+}
+
+TD.MYDATE{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+TD.HEAD {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: red;
+}
+
+TD.SMALL {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight : bold;
+    color: #FFFFFF;
+}
+
+.STD {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 10px;
+    text-decoration: none;
+    color: #FF0000;
+}
+
+TD.STANDART {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 10px;
+    text-decoration: none;
+    background-color: #FFCC99;
+    color: #000000;
+}
+TD{
+    font-family: Arial, Helvetica, Sans-Serif;
+    text-decoration: none;
+}
+TD.BLUE {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight : bold;
+    background-color:#000063;
+    color: #FFFFFF;
+}
+
+TD.SH {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 24px;
+    color: #000000;
+}
+
+TH.STANDARD {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: red;
+}
+
+HR{
+    width : 75%;
+    color: #FF9966;
+    height : 1px;
+}
+
+.header1 {
+font-family:Arial, Verdana;
+font-size: 14pt;
+color: #FCA703;
+font-weight: bolder;
+}
+.header2 {
+font-family:Arial, Verdana;
+font-size: 11pt;
+color: #A33D01;
+font-style: italic;
+font-weight: bolder;
+}
+.texts {
+font-family:Arial, Verdana;
+font-size: 8pt;
+}
+.textselect
+{
+    color: #EA6727;
+    text-decoration: underline overline;
+    font-size:10px;
+}
+.copyright
+{
+    font-family:serif;
+    font-size:10pt;
+    text-align:center;
+    padding:0;
+}
+.striked
+{
+    text-decoration:line-through;
+}
+.error
+{
+    color:red;
+    font-weight:bold;
+}
+.error a
+{
+    color:red;
+    text-decoration:underline;
+}
+.artAddShop{
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 9px;
+    text-decoration: none;
+    color: #000000;
+    border-color: #FFCC99;
+    background-color: #FBF5D7;
+    padding:0px;
+    width:130px;
+}
+
+.yellowline
+{
+    background-color:#FDC65A;
+    border:1px solid #FDC65A;
+    width:100%;
+    height:1px;
+}
+.submitDisc
+{
+    font-family:serif;
+    font-size:13px;
+    color:#C62C2A;
+    font-weight:bold;
+}
+ .discText
+{
+    margin:10px;
+    /*color:navy;*/
+    color:black;
+    font-weight:bold;
+    font-size:11px;
+}
+
+table.standrt td
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+}
+
+.underStandrt table td
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+}
+.500warning
+{
+    font-size:11px;
+    color:red;
+}
+.rightBordered
+{
+    border-right:1px solid #FDC65A;
+}
+.rightBorderedTP
+{
+    border-right:1px solid #A4B05A;/*DA682C;*/
+}
+.PopUpText
+{
+    font-weight:bold;
+    cursor:hand;
+}
+.orderPast
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#FCA703;
+    font-weight:bold;
+    font-size:12px;
+    padding:3px 10px 4px 10px;
+}
+.orderCurrent
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#CD4F11;
+    font-weight:bold;
+    font-size:12px;
+    padding:3px 10px 4px 10px;
+}
+.orderFuture
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#FDC65A;
+    font-weight:bold;
+    font-size:12px;
+    padding:3px 10px 4px 10px;
+}
+.clientLogin td
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight:bold;
+    font-size:12px;
+}
+.afterAddProduct
+{
+    position:absolute;
+    z-index:100;
+    top:200;
+    left:250;
+    border:1px solid black;
+    width:350px;
+    background-color:#FBF5D7;
+}
+.invisible
+{
+    visibility:hidden;
+    display:none;
+}
+.visible
+{
+    visibility:visible;
+    display:inline;
+}
+.spacer
+{
+    width:1px;
+    height:1px;
+    font-size:0px;
+    border:0;
+}
+.experts
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 11px;
+}
+.experts:hover
+{
+    text-decoration: underline;
+    color:#000000;
+}
+ .qOrderPath
+ {
+     color:#FCA703;
+     font-size:12px;
+     font-weight:bold;
+     text-decoration:underline;
+ }
+ .qOrderHead
+ {
+     /*font-family: serif;*/
+     font-family:Arial, Helvetica, sans-serif;
+     font-size:11px;
+     font-weight:bold;
+ }
+ .newmenuFullSell
+ {
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     font-weight: bold;
+     color: #FFFFFF;
+     background-color: #CD4F11;
+     border-color: #FFFFFF;
+     font-size: 11px;
+ }
+ .newmenuFullSell:hover
+ {
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     font-weight: bold;
+     color: #FFFFFF;
+     background-color: #CD4F11;
+     border-color: #FFFFFF;
+     font-size: 11px;
+ }
+  font.newmenu
+  {
+      font-size:11px;
+      font-weight:bold;
+      background-color:#FDC65A;
+      color:#FFFFFF;
+  }
+  font.newmenuFullSell
+  {
+      font-size:11px;
+      font-weight:bold;
+      background-color:#CD4F11;
+      color:#FFFFFF;
+  }
+ /*-- artices styles --*/
+ .articleScroll_3
+      {
+          height:100px;
+          width:185px;
+          overflow:hidden;
+          overflow-x:visible;
+          overflow-y:hidden;
+          text-align:left;
+          font-family:Arial, Helvetica, sans-serif;
+          font-size:11px;
+          margin-left:10px;
+          margin-top:6px;
+          padding-right:10px;
+          /*border:1px dotted black;*/
+      }
+      .articleHead_3
+      {
+          width:98%;
+          height:17px;
+          background-color:#FCA703;
+          color:#000000;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 11px;
+          text-align:left;
+          padding:3px 0px 0px 5px;
+          margin: 0;
+          overflow:hidden;
+          overflow-y:hidden;
+      }
+      .artLink31
+      {
+          width:205px;
+          height:15px;
+          color:#FCA703;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 11px;
+          text-align:right;
+          margin-top:5px;
+          overflow:hidden;
+          overflow-x:hidden;
+          overflow-y:hidden;
+          /*border:1px solid black;*/
+      }
+      .artLink3
+      {
+          color:#FCA703;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 11px;
+      }
+      .artLink3:hover
+      {
+          color:#FCA703;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-decoration:underline;
+          font-size: 11px;
+      }
+      .artImage3
+      {
+          width:85px;
+          overflow:hidden;
+          overflow-x:hidden;
+          overflow-y:hidden;
+          /*border:1px solid black;*/
+          margin:0 0 0 10px;
+          padding:0 0 0 20px;
+      }
+      .artTable td
+      {
+          padding-top:15px;
+          padding-left:15px;
+          padding-right:0;
+      }
+      .artTable td table td
+      {
+          margin:0;
+          padding:0;
+      }
+/*-- end article styles --*/
+
+/*-- admin styles --*/
+.admin_hint
+{
+    font-size:10px;
+}
+.admCatPath
+{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    text-decoration:none;
+}
+.admCatPath a
+{
+    color:orange;
+    font-weight:bold;
+    text-decoration:none;
+}
+.admCatPath a:hover
+{
+    color:red;
+    text-decoration:underline;
+}
+/*-- end admin styles --*/
