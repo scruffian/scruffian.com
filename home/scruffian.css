@@ -5,7 +5,7 @@
 }
 body {
   background: url(background.jpg);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   font-family: Georgia, serif;
   font-size: 1.4em;
   overflow: hidden;
@@ -114,16 +114,28 @@ h2 {
 
 
 .iframe {
-	max-width: 700px;
+	max-width: 740px;
 	margin: 0 auto;
 }
 
 .links a {
-	margin: 10px 20px;
+	margin: 10px 10px;
 }
 
 @media ( max-width: 600px ) {
 	.links a {
 		display: block;
 	}
+  input { box-sizing: border-box; margin: 1px; width:100%; }
+}
+
+input.email {
+  font-size: 20px;
+  padding: 5px;
+}
+
+input.button {
+  background: #fff;
+  font-size: 20px;
+  padding: 5px;
 }
