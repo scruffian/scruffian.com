@@ -7,49 +7,43 @@
 		<style>
 			* { margin: 0; padding: 0; }
 			body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-			body { color: #333; font-size: 2em; text-align: center; }
-			input { border: 2px solid #ccc; background: #eee; color: #333; font-size: 1em; padding: 5px;}
-			h1,h2,h3 { font-size: 1em; font-weight: normal; }
-			h1 { color: #ccc; }
-			h2 { color: #eee; margin-bottom: 1em; }
-			h3 { margin: 1em; }
-			a { color: #0687f5; }
-			a:hover { color: lightblue; }
-			.footer { margin: 10em 0 1em 0; opacity: 0.5;
-				-webkit-transition: opacity 0.1s ease-in-out;
-    			-moz-transition: opacity 0.1s ease-in-out;
-				transition: opacity 0.1s ease-in-out;
-			}
-			.footer:hover {opacity: 1; }
+			body { color: #333; font-size: clamp(16px, 2.5vw, 32px); padding: 5vw; word-wrap: break-word;}
 
+			input { border: 2px solid #ccc; background: #eee; color: #333; font-size: 1em; padding: 5px;}
+			h1,h2,h3 { font-size: 2em; font-weight: normal; }
+			h2 { color: #ccc; font-style: italic; }
+			section { border-bottom: 1px solid #333; margin-bottom: 1.5em; padding-bottom: 2em; }
+			a { color: #333; text-decoration: none; }
+			a:hover { color: lightblue; }
 			.contact { margin: 1em; }
 		</style>
 	</head>
 	<body>
-		<h1>scruffian</h1>
-		<h2><em>def:</em> a scruffy ruffian</h2>
-		<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=797124977/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://music.scruffian.com/album/isolated">Isolated by scruffian</a></iframe>
-		<h3><a href="https://ben.blog/2020/09/11/isolated/">Isolated: The world's first vocoder only album?</a></h3>
+		<section>
+			<h1><a href="https://scruffian.com">scruffian.com</a></h1>
+			<p>a scruffy ruffian. You are here.</p>
+		</section>
 
-		<p>
-			<a href="https://ffm.to/scruffian-isolated">Listen elsewhere</a>
-		</p>
+		<section>
+			<h3><a href="https://haiku.blog">haiku.blog</a></h3>
+			<p>I write a haiku every day. Some of them grow up in into songs.</p>
+		</section>
 
-		<!-- Begin Mailchimp Signup Form -->
-		<div class="footer">
-			<div class="contact"><a href="https://scruffian.wordpress.com/contact">Email me</a></div>
-			<div id="mc_embed_signup">
-			<form action="https://scruffian.us2.list-manage.com/subscribe/post?u=b2db33576e328c6b367dd988b&amp;id=b93044a5a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div id="mc_embed_signup_scroll">
-				<label for="mce-EMAIL">Get email updates</label>
-				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				<div style="display: none;" aria-hidden="true"><input type="text" name="b_b2db33576e328c6b367dd988b_b93044a5a9" tabindex="-1" value=""></div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-				</div>
-			</form>
-			</div>
-			<!--End mc_embed_signup-->
-		</div>
+		<section>
+			<h3><a href="https://ben.blog">ben.blog</a></h3>
+			<p>Weblog. <a href="https://ben.blog/about">About</a>. <a href="https://scruffian.wordpress.com/contact">Contact</a>.
+			</section>
+	</p>
+		</section>
+
+		<section>
+			<h3><a href="https://music.scruffian.com">music.scruffian.com</a></h3>
+			<p>Music is meant to be fun, that's why it's played.</p>
+		</section>
+
+		<section>
+			<h3><a href="https://strawdio.wordpress.com">strawdio.wordpress.com</a></h3>
+			<p>I am building a recording studio in my garden out of straw bales. You can watch the progress here.</p>
+		</section>
 	</body>
 </html>
