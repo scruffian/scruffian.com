@@ -1,3 +1,12 @@
+<?php
+$headerImage = '06121650.jpg';
+$headerImages = glob(dirname(__FILE__).'/topimages/*.jpg');
+
+if ($headerImages && count($headerImages) > 0) {
+	sort($headerImages);
+	$headerImage = 'topimages/'.basename($headerImages[mt_rand(0, count($headerImages) - 1)]);
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -114,7 +123,7 @@ function over(text)
 		<div id="background"></div>
 		<h1>Scruffian</h1>
 		<div id="header">
-			<div id="header-pic"></div>
+			<div id="header-pic" style="background-image:url('<?php echo $headerImage; ?>');"></div>
 		</div>
 		<div id="nav">
 			<div id="navcontainer">
