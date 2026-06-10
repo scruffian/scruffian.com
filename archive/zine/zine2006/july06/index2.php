@@ -101,7 +101,7 @@ function preloadImages() {
 	</TR>
 	<TR>
 		<TD>
-			<A HREF="../../../archive/odd%20bits/designprojects.htm"
+			<A HREF="../../../odd-bits/designprojects.htm"
 				ONMOUSEOVER="changeImages('Design_Projects', 'images/Design-Projects-over.gif'); return true;"
 				ONMOUSEOUT="changeImages('Design_Projects', 'images/Design-Projects.gif'); return true;">
 				<IMG NAME="Design_Projects" SRC="images/Design-Projects.gif" WIDTH=200 HEIGHT=31 BORDER=0 ALT=""></A></TD>
@@ -163,7 +163,7 @@ function preloadImages() {
 	</TR>
 	<TR>
 		<TD>
-			<A HREF="../../../archive/odd%20bits/contact.php"
+			<A HREF="../../../odd-bits/contact.php"
 				ONMOUSEOVER="changeImages('Contact', 'images/Contact-over.gif'); return true;"
 				ONMOUSEOUT="changeImages('Contact', 'images/Contact.gif'); return true;">
 				<IMG NAME="Contact" SRC="images/Contact.gif" WIDTH=200 HEIGHT=34 BORDER=0 ALT=""></A></TD>
