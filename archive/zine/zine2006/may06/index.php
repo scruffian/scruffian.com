@@ -211,8 +211,8 @@ a:hover	{ text-decoration: none; color: #7b7956;}
       &nbsp;- <a href="../../../media/movies/index.html">Movies</a><br> &nbsp;- <a href="../../../media/oddsandends.htm">Odds
       and Ends</a><br> &nbsp;- <a href="../../../gallery/index.php">Gallery</a><br> <a href="../../../news/archives.html">Old
       News</a><br> &nbsp;- <a href="../../../media/oldnews.htm">Really old news</a><br>
-      <a href="../../../archive/odd%20bits/designprojects.htm">Design Projects</a><br> <a href="../../../links.htm">Links</a><br>
-      &nbsp;- <a href="../../../links/index.php">BMX family</a><br> <a href="../../../archive/odd%20bits/contact.php">Contact</a>
+      <a href="../../../odd-bits/designprojects.htm">Design Projects</a><br> <a href="../../../links.htm">Links</a><br>
+      &nbsp;- <a href="../../../links/index.php">BMX family</a><br> <a href="../../../odd-bits/contact.php">Contact</a>
     </td>
   </tr>
 </table>
