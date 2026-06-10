@@ -107,34 +107,6 @@ function over(text)
 	document.getElementById('text').innerHTML = text;
 }
 </script>
-<style>
-#header-pic
-{
-	<?php
-			$Image = null;
-			$filename = __DIR__ . '/topimages/' . date("md") . '.jpg';
-			if (file_exists($filename))
-			{
-				$Image = date("md");
-			}
-		else
-		{
-			for($Loop = 0; $Loop < 365 ; $Loop++ )
-			{
-					$filename = __DIR__ . '/topimages/' . date("md", strtotime("+$Loop day")) . '.jpg';
-					if (file_exists($filename))
-					{
-						$Image = date("md", strtotime("+$Loop day"));
-						break;
-					}
-				}
-			}
-		?>
-		<?php if ($Image !== null) { ?>
-		background-image:url(topimages/<?php echo $Image ?>.jpg);
-		<?php } ?>
-}
-</style>
 </head>
 
 <body>
@@ -153,7 +125,7 @@ function over(text)
 					<li><a href="javascript:over('design')">Design</a></li>
 					<li><a href="javascript:over('archive')">Archive</a></li>
 					<li><a href="javascript:over('links')">Links</a></li>
-					<li><a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'ISO-8859-1') ?>?page=contact">Contact</a></li>
+					<li><a href="?page=contact">Contact</a></li>
 				</ul>
 			</div>
 			<div id="right">
@@ -347,9 +319,9 @@ function over(text)
 						$Headers = "From: $EMailAddress \r\n" .
 								"Reply-To: $EMailAddress \r\n";
 
-						mail($To, $Subject, $Message, $Headers);
+						//mail($To, $Subject, $Message, $Headers);
 
-						$include = "Thank you for your email. I will reply to your question soon.";
+						$include = "This will not work!";
 					}
 					print($include);
 				}
