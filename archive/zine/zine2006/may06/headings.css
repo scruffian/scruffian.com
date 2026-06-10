@@ -1,0 +1,34 @@
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	color:#000;
+	font-size:50pt;
+}
+
+h2 {
+	color:#000;
+	font-size:40pt;
+}
+
+h3 {
+	color:#000;
+	font-size:20pt;
+}
+
+h4 {
+	color:#000;
+	font-size:16pt;
+}
+
+h5 {
+	color:#000;
+	font-size:14pt;
+}
+
+h6 {
+	color:#000;
+	font-size:12pt;
+}

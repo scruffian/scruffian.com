@@ -1,0 +1,13 @@
+<h3>7th April</h3>
+<p>Today I saw a blind man with tatoos. Maybe he knows what the look like from the shape of the pain.</p>
+<p>I am also after and old profile cranks. Axle or arms anyone?</p>
+<p>&nbsp;</p>
+<h3>6th April</h3>
+<p>The last few days have been so fun. Its been dry and sunny. I need to take more pictures.</p>
+<p>I need a new car so if you spot a good deal on a diesel please let me know</p>
+<p>&nbsp;</p>
+<h3>3rd April</h3>
+<p>Joeys wood (home of Joey's trails) is up for auction (<a href="http://www.cliveemson.co.uk/listing_view.asp?Lot=75&Auc=118">details</a>). The guide price says £2000 - £3000 but I expect it will sell for more than that.</p>
+<p>This is scary becasue if someone buys it the trails will probably get plowed. Does anyone have any ideas how we could solve this problem?</p>
+<p>The auction is on Friday the 13th of April, so only 2 weeks away.</p>
+<p>&nbsp;</p>

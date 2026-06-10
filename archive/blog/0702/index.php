@@ -1,0 +1,72 @@
+					<h3>28th February</h3>
+					<p><a href="http://www.savenonsuch.co.uk/">Save Nonsuch Park (and Epsom trails)</a>.</p>
+					<p>&nbsp;</p>
+					<h3>27th February</h3>
+					<p>Been sooo busy the last few days so no time for internet. Lots of pictures on my camera.</p>
+					<p>The weather at <a href="http://www.metcheck.com/V40/UK/FREE/singularities.asp">this time of year</a> is usually stormy, but turning nice mid way through march, although <a href="http://www.metcheck.com/V40/UK/FREE/14days.asp?zipcode=Tenterden">this</a> suggests that the stormy period may be continuing for a while at least.</p>
+					<p>&nbsp;</p>
+					<h3>23rd February</h3>
+					<p><a href="http://www.noidco.com/pete/homeright.htm">Pete</a> found some news about ashford park.<br>
+					Also I found out today that the park in Maidstone can now be used, although its not officially open until April.
+					</p>
+					<p>&nbsp;</p>
+					<h3>22nd February</h3>
+					<p><a href="http://www.digitalmaidstone.co.uk/AnitePublicDocs/00056775.pdf">Design and Access guide.</a><br />
+					<a href="http://www.digitalmaidstone.co.uk/AnitePublicDocs/00056831.pdf">Overview plan.</a><br />
+					<a href="http://www.digitalmaidstone.co.uk/AnitePublicDocs/00056846.pdf">Side view plan.</a><br />
+					<a href="http://www.digitalmaidstone.co.uk/AnitePublicDocs/00056826.pdf">Email from Environment Agency.</a><br />
+					</p>
+					<p>&nbsp;</p>
+					<h3>21th February</h3>
+					<p>My planning application can be viewed <a href="http://www.digitalmaidstone.co.uk/digitalmaidstone/default.aspx?page=4262">here.</a> Planning reference number is  07/0300. Doesn't work too well in firefox. All the plans are on there. I'll link them up tomorrow.</p>
+					<p>&nbsp;</p>
+					<h3>20th February</h3>
+					<p><a href="http://www.saveradleylakes.org.uk/">Save Radley Lakes.</a> Someone might be interested in that.</p>
+					<p>&nbsp;</p>
+					<h3>18th February</h3>
+					<p><a href="http://www.bmx-forum.com/58177-my-fly-pantera.html">Pete's bike.</a> <a href="http://www.bmx-forum.com/58171-s-m-kris-bennet-aka-monster.html">Nigel's bike.</a></p>
+					<p>&nbsp;</p>
+					<h3>16th February</h3>
+					<p><a href="http://www.deviantart.com/deviation/46036660/?qo=14&q=by%3Aspacecoyote&qh=sort%3Atime+-in%3Ascraps">This is good</a>.</p>
+					<p>&nbsp;</p>
+					<h3>15th February</h3>
+					<p><a href="http://www.scruffian.com/zine/070201Sittingbourne%20In%20Winter/">Some videos of Sittingbourne</a></p>
+					<p><a href="http://www.scruffian.com/photography/index.php?sub=070208">Some pictures of snow</a></p>
+					<p><a href="http://www.scruffian.com/photography/index.php?sub=070127">Some pictures of woods</a></p>
+					<p>&nbsp;</p>
+					<h3>13th February</h3>
+					<p>Things I like at the moment:<br>
+					<a href="http://www.blewbmx.com">Blew BMX</a><br>
+					<a href="http://bp2.blogger.com/_YLWAq1tweXI/RXxUtOD0LOI/AAAAAAAAAB0/ys7jL3Jr1ro/s1600-h/DSC_5549.jpg">These</a> <a href="http://bp1.blogger.com/_YLWAq1tweXI/RXxUs-D0LKI/AAAAAAAAABU/4agoHxKxQwo/s1600-h/DSC_5029copy.jpg">pictures</a> from <a href="http://www.deansmithphoto.blogspot.com/">Dean Smith's Blog.</a><br>
+					I really like it when peoples bike goes flat when they spin round. <a href="http://bp0.blogger.com/_YLWAq1tweXI/Rc-YuETveLI/AAAAAAAAAAs/lRUxaXabG3g/s1600-h/_DSC0116+copy.jpg">This</a> trick looks fun too.<br>
+					<a href="http://tricklist.fateback.com/">Tricklist.</a> Because it's updated a lot. Riding pictures too!<br>
+					<a href="http://www.wearehomegrown.co.uk">We Are Homegrown</a>. Becasue he uses Radiohead lyrics for titles<br>
+					<a href="http://www.derelictbmx.com/">Derelict BMX</a>. Becasue it actually got updated once!<br>
+					<a href="http://www.urbanwarfarebmx.com/">Urban Warfare</a> Because they actually put up pictures of what they are building. I'll do that some day I promise.<br>
+					<a href="http://www.noidco.com/pete">Pete's ramblings.</a> Just because.</p>
+					<p>&nbsp;</p>
+					<h3>12th February</h3>
+					<p>I did more hours on Saturday, digging, than I do at work. I listened to some comedy to keep me amused. I made some short jumps and some long jumps at the same time, although the long ones will probably never happen.</p>
+					<p>&nbsp;</p>
+					<h3>9th February</h3>
+					<p>I think I agree with <a href="http://www.thecomeupbmx.net/post.php?pid=84">this</a>. Nike know nothing about BMX, neither do they care. If you buy products from rider owned companies then you are supporting them in developing new products. If you buy from Nike then they will just continue to milk the industry and not put anything into it. Discuss.</p>
+					<p>&nbsp;</p>
+					<h3>7th February</h3>
+					<p>I went digging tonight. Its very cold outside and the ground was frozen. After a while digging warms up your fingers and toes. I have been working on the end section. Could do with some help on Saturday if anyone is about.</p>
+					<p>&nbsp;</p>
+					<h3>6th February</h3>
+					<p>I went to see Ricky Gervais at the Brighton Centre last night. It was very funny (as good as his other 2 stand-up DVDs. You can't really say much more in a comedy review than that, becasue you don't want to give the jokes away. He dealt with hecklers really well, and he made it seem not at all scripted, although I am pretty sure its very similar every night.</p>
+					<p>What made the night more interesting is that we were sat on a row inbetween the freinds and family. Sitting directly behind me was Jane Fallon (Ricky's girlfriend) and behind Becky was probably her sister, and next to her was David Earl, who was in Extras. We were rude and listening to their conversation. Was a good night anyway.</p>
+					<p>&nbsp;</p>
+					<h3>5th February</h3>
+					<p>Watch <a href="http://youtube.com/watch?v=eSI2ptJJK9g">this (go to 2:40)</a>. Thom Yorke is a nice person.</p>
+					<p><a href="http://www.noidco.com/pete/homeright.htm">Pete</a> didn't have a good weekend. I forgot to say that last week me and greg went for a look at the new park in Maidstone. It looks really fun. The bowl looks bigger than in the pictures. Just a good size with nice hips! It wasn't finished, but looks like it will be soon. Exciting!</p>
+					<p>&nbsp;</p>
+					<h3>3rd February</h3>
+					<p>I drive past <a href="http://news.bbc.co.uk:80/1/hi/england/kent/6326425.stm
+">this </a> everyday. Makes me chuckle, not slow down. Probably more dangerous!</p>
+					<p>&nbsp;</p>
+					<h3>2nd February</h3>
+					<p>Spring seems to be coming too quickly. There is a lot of work still needed at the woods. Why do people say "textses" not "texts"?</p>
+					<p>I love <a href="http://xkcd.com/c212.html">this cartoon</a> a lot. There are some really good ones on there.</p>
+					<p>Went to Sittingbourne on Wednesday. It will be closed for at least the next 2 weeks while they build a new step up. Looks quite good apart from the rail across the top.</p>

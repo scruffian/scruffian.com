@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<title>Webcam</title>
+</head>
+<body>
+<table width="100%" height="100%"><tr><td align="center" valign="middle">
+<script language="javascript">
+var refreshrate=10;
+var image="webcam.jpg";
+var imgheight=240;
+var imgwidth=320;
+function refresh(){
+document.images["pic"].src=image+"?"+new Date();
+setTimeout('refresh()', refreshrate*1000);}
+document.write('<IMG SRC="'+image+'" NAME="pic" ID="pic" WIDTH="'+imgwidth+'" HEIGHT="'+imgheight+'">');
+if(document.images)window.onload=refresh;
+</script> 
+</td></tr></table>
+</body>
+</html>
