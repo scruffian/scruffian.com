@@ -13,7 +13,7 @@ function over(text)
 	{
 		text = "<h3>About</h3>";
 		text = text + "This website is a collection of pictures, words and ideas which document the lives of people who don't like killing time in front of the television. I like being outside and looking at trees and animals. I like going for walks and taking pictures of things I see. I like to build jumps out of mud and ride them on my bike. I also like doodling on paper, on the computer and on my guitar.";
-		text = text + "<br /><br /><a href='archive/about/index.htm'>The old about page</a>";
+		text = text + "<br /><br /><a href='about/index.html'>The old about page</a>";
 	}
 	if(text == 'links' )
 	{
