@@ -11,6 +11,9 @@
 body         { margin:0; overflow:auto; border:0px none; font-family: Tahoma; font-size: 8pt; margin-width: 0; margin-height: 0; border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px }
 table        { font-size: 8pt; font-family: tahoma; }
 img			 { border: 0px solid #FFFFFF; color: #FFFFFF }
+.guestbook-images { max-width: 558px; text-align: right; }
+.guestbook-images p { margin: 0 0 10px 0; }
+.guestbook-images img { display: block; max-width: 100%; height: auto; margin: 0 0 12px auto; }
 
 body         { color: #999999 }
 a            { text-decoration: none;}
@@ -174,8 +177,29 @@ google_color_text = "999999";
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                                                                                         </script>
       </p></td>
-    <td width="558" height="575" align="right" valign="top"> 
-      <?php include('/home/thisis/public_html/messages/gbinclude.php'); ?>
+    <td width="558" height="575" align="right" valign="top">
+      <div class="guestbook-images">
+        these are all the pictures that were on the guestbook in 04/05<br><br>
+        <?php
+        $guestbookImageDir = 'media/bitsandbobs/gbookimages';
+        $guestbookImagePath = __DIR__ . '/' . $guestbookImageDir;
+        $guestbookImages = glob($guestbookImagePath . '/{*.jpg,*.jpeg,*.gif,*.png,*.webp}', GLOB_BRACE);
+        rsort($guestbookImages, SORT_NATURAL);
+
+        foreach ($guestbookImages as $guestbookImage) {
+            $guestbookImageUrl = htmlspecialchars($guestbookImageDir . '/' . basename($guestbookImage), ENT_QUOTES);
+            $guestbookImageAlt = htmlspecialchars(basename($guestbookImage), ENT_QUOTES);
+            $guestbookImageSize = getimagesize($guestbookImage);
+            $guestbookImageDimensions = '';
+
+            if ($guestbookImageSize) {
+                $guestbookImageDimensions = ' width="' . $guestbookImageSize[0] . '" height="' . $guestbookImageSize[1] . '"';
+            }
+
+            echo '<p><a href="' . $guestbookImageUrl . '"><img src="' . $guestbookImageUrl . '" alt="' . $guestbookImageAlt . '"' . $guestbookImageDimensions . '></a></p>' . "\n";
+        }
+        ?>
+      </div>
     </td>
   </tr>
 </table>
