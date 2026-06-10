@@ -160,7 +160,7 @@ function showdiv(div)
 	</div>
 	<div id="top">
 		<span class="buttons"><a href="http://www.scruffian.com/index.php?page=contact">Contact</a></span>
-		<span class="buttons"><a href="http://www.scruffian.com/archive/about/">About</a></span>
+		<span class="buttons"><a href="http://www.scruffian.com/archive/about/index.html">About</a></span>
 		&nbsp;&nbsp;by Ben Dwyer.
 	</div>
 	<div id="container">

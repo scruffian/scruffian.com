@@ -200,7 +200,7 @@ a:hover	{ text-decoration: none; color: #7b7956;}
     </td>
     <td width="20%" valign="top" id="nav"><p>&nbsp;</p>
       <h3>Navigation</h3>
-      <a href="../../../archive/about/index.html">About [+ FAQ]</a><br> <a href="../../index.php">Zine</a><br>
+      <a href="../../../about/index.html">About [+ FAQ]</a><br> <a href="../../index.php">Zine</a><br>
       &nbsp;- <a href="../../zine2005/index.html">Zine v1</a><br> &nbsp;- <a href="../october05/index.html">October
       05</a><br> &nbsp;- <a href="../november05/index.html">November 05</a><br> &nbsp;-
       <a href="../december05/december.html">December 05</a><br> &nbsp;- <a href="../january06/index.html">January

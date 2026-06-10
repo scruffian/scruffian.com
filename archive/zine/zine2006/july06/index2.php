@@ -75,7 +75,7 @@ function preloadImages() {
 	</TR>
 	<TR>
 		<TD>
-			<A HREF="../../../archive/about/index.html"
+			<A HREF="../../../about/index.html"
 				ONMOUSEOVER="changeImages('About', 'images/About-over.gif', 'Old_News', 'images/Old-News-About_over.gif'); return true;"
 				ONMOUSEOUT="changeImages('About', 'images/About.gif', 'Old_News', 'images/Old-News.gif'); return true;">
 				<IMG NAME="About" SRC="images/About.gif" WIDTH=200 HEIGHT=32 BORDER=0 ALT=""></A></TD>
