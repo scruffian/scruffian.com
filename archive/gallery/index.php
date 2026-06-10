@@ -211,7 +211,7 @@ onload="javascript:Loaded();"
 		if($sub)
 		{
 		?>
-		<div id="preload" style="display: none;"><img src="left.gif" /><img src="right.gif" /><img src="loading.gif" /></div>
+		<div id="preload" style="display: none;"><img src="left.gif" /><img src="right.gif" /><img src="images/loading.gif" /></div>
 		<?php
 			$myFile = "$sub/captions.txt";
 			$fh = fopen($myFile, 'r');

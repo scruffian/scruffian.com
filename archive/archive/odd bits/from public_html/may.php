@@ -75,11 +75,11 @@ a:hover	{ text-decoration: none; color: #7b7956;}
 	</tr>
 </table>
 <p><h4>26th May</h4>
-<img src="zine/may06/post.gif" align="right"><a href="http://www.scruffian.com/media/bitsandbobs/jumble/2/021106_0014.jpg">Todays message is brought to you with wet feet</a>.<br><br>
+<img src="../../../zine/zine2006/may06/post.gif" align="right"><a href="http://www.scruffian.com/media/bitsandbobs/jumble/2/021106_0014.jpg">Todays message is brought to you with wet feet</a>.<br><br>
 I made it my mission a year or so ago to make sure the word Shrimmo was on google, which it now is. What I found though was <a href="http://www.worldwidirectory.com/Oceania/Australia/Western.Australia/Tenterden/News.and.Media/">this</a> (do a search on shrimmo). There is a Tenterden in Western Australia, my site provides news for it apparently, and it even gets two stars!<br><br>
 Pensions: Most young people don't vote. Well not for government, only big brother. I thought I only had to work for 42 more years. Now it turns out I have to do 45, more than when I started working. In animal farm, the retirement age is pushed further and further back until the animals die from hard work. I guess the only consolation is that when this younger generation get to "voting age" they will go back on all the promises the government have made now, and change is all so it works out better for them. You can always rely on the selfishness of strangers.</p>
 <p><h4>25th May</h4>
-<img src="zine/may06/house.gif" align="right">"A job that slowly kills you". Radiohead are too good. I am finding it difficult to listen to anything else its like a drug. I find the resonance between the world the create and the world in which I live, stunning. By which I mean that their songs seem to just capture exactly what it is like to live in the world at the moment.<br><br>
+<img src="../../../zine/zine2006/may06/house.gif" align="right">"A job that slowly kills you". Radiohead are too good. I am finding it difficult to listen to anything else its like a drug. I find the resonance between the world the create and the world in which I live, stunning. By which I mean that their songs seem to just capture exactly what it is like to live in the world at the moment.<br><br>
 "Such a pretty house and such a pretty garden". -><br><br>
 It has only taken about a year, but my <a href="media/2006/barmouth/">holiday pictures</a> are finally online. When it says below it means above. I moved the text. That holiday was at easter. It may have taken me a long time to get round to putting the pictures on, but some of the chocolate that I was given then is still sitting on my desk. I guess I am slow.<br><br>
 Perhaps I could also defend my recent comments about blogs. For internet geeks only:<br><br><br>
@@ -94,43 +94,43 @@ I have written an article. It's pretty long and boring, but its raining outside 
 Radiohead were really good. <a href="http://www.greenplastic.com/">Green Plastic for more I guess.</a><br><br>
 It is raining too much. I don't know what to do with myself. Jumps are too wet. Maybe build a house.</p>
 <p><h4>19th May</h4>
-<img src="zine/may06/london.gif" align="right">Tonight I am going to Smelly London (boo) to see Radiohead (yay).</p>
+<img src="../../../zine/zine2006/may06/london.gif" align="right">Tonight I am going to Smelly London (boo) to see Radiohead (yay).</p>
 <p><h4>18th May</h4>
 We have been doing some painting. We made two signs:<br>
-<a href="http://www.scruffian.com/zine/may06/06051447.jpg">Private Property</a> | <a href="http://www.scruffian.com/zine/may06/06051448.jpg">Private Keep Out!</a><br><br>
-I went to some jumps last weekend. I had too much fun to take many photos but I got <a href="http://www.scruffian.com/zine/may06/tenterden/trails.htm">a few</a></p>
+<a href="http://www.scruffian.com/archive/zine/zine2006/may06/06051447.jpg">Private Property</a> | <a href="http://www.scruffian.com/archive/zine/zine2006/may06/06051448.jpg">Private Keep Out!</a><br><br>
+I went to some jumps last weekend. I had too much fun to take many photos but I got <a href="http://www.scruffian.com/archive/zine/zine2006/may06/tenterden/trails.htm">a few</a></p>
 <p><h4>17th May</h4>
-<img src="zine/may06/lunch.gif" align="left">
-Too busy to update this thing. Trails are fun. I keep on feeling really hungry. Much more hungry than normal.<br><br>Here is the picture from the last update that didn't work: <a href="http://www.scruffian.com/zine/may06/06051018.jpg">Driving home from work</a>.<br><br clear="all"></p>
-<p><img src="zine/may06/tbog.gif" align="right"><h4>13th May</h4>
-<a href="zine/may06/maytwelfth.html">Bluebells in the woods</a>.<br><br></p>
+<img src="../../../zine/zine2006/may06/lunch.gif" align="left">
+Too busy to update this thing. Trails are fun. I keep on feeling really hungry. Much more hungry than normal.<br><br>Here is the picture from the last update that didn't work: <a href="http://www.scruffian.com/archive/zine/zine2006/may06/06051018.jpg">Driving home from work</a>.<br><br clear="all"></p>
+<p><img src="../../../zine/zine2006/may06/tbog.gif" align="right"><h4>13th May</h4>
+<a href="../../../zine/zine2006/may06/maytwelfth.html">Bluebells in the woods</a>.<br><br></p>
 <h4>11th May</h4>
 Today I am wearing a yellow t-shirt.<br>
-<a href="zine/may06/06050602.jpg">Can you spot the canoist?</a>. Its a good time to go canoing before the river gets too weedy. If you would like to go canoing then you can come and borrow our canoe. Let me know in the book. I should really say kayak not canoe.<br><br>
+<a href="../../../zine/zine2006/may06/06050602.jpg">Can you spot the canoist?</a>. Its a good time to go canoing before the river gets too weedy. If you would like to go canoing then you can come and borrow our canoe. Let me know in the book. I should really say kayak not canoe.<br><br>
 Some more pictures of that field:
-<a href="zine/may06/06050706.jpg">One</a> | <a href="zine/may06/06050719.jpg">Two</a> | <a href="zine/may06/06050720.jpg">Three</a></p>
-<p><img src="zine/may06/scraper.gif" align="right">
+<a href="../../../zine/zine2006/may06/06050706.jpg">One</a> | <a href="../../../zine/zine2006/may06/06050719.jpg">Two</a> | <a href="../../../zine/zine2006/may06/06050720.jpg">Three</a></p>
+<p><img src="../../../zine/zine2006/may06/scraper.gif" align="right">
 <h4>9th May</h4>
 It rained so much yesterday there were big puddles everywhere. I want to ride Nigel's jumps at the weekend if he will let me.<br><br>
 It is exactly a year since I broke my leg today. That was one of the worst days ever I think. Well for me anyway. I am being extra careful when I cross the road these days. Eating cod liver oil and listening to The Flaming Lips. Yeah Yeah Yeah.</p>
 <p>
 <h4>8th May</h4>
-Went on a walk to look for some yellow flowers. <a href="zine/may06/06050712.jpg">Found a pretty field.</a></p>
+Went on a walk to look for some yellow flowers. <a href="../../../zine/zine2006/may06/06050712.jpg">Found a pretty field.</a></p>
 <p>
 <h4>7th May</h4>
 Not much news. I know a lot of people who read this like The Office, so you might want to get the new <a href="http://www.rickygervais.com">Ricky Gervais</a> podcasts. Stephen Merchant is pretty funny.<br><br>
 I am starting to get withdrawal symptoms from the shovel load. The reality is beginning to kick in. Can someone please make some new good websites please. Thank you.<br clear="all"></p>
-<p><img src="zine/may06/rocket.gif" align="right">
+<p><img src="../../../zine/zine2006/may06/rocket.gif" align="right">
 <h4>6th May</h4>
 <a href="http://tricklist.fateback.com/">Tricklist</a> has an amazing new video called going solo. He has also made a 360 video. I think you need to look over your shoulder, not that I can do them anyway!<br><br>
 Today I went for a walk and found these things:<br>
-<a href="zine/may06/06050603.jpg">A dead squirrel.</a> It looks like it died dancing.<br>
-<a href="zine/may06/06050605.jpg">A horse wearing a blindfold.</a><br>
-<a href="zine/may06/06050604.jpg">A modern gypsy dwelling.</a><br clear="all"></p>
+<a href="../../../zine/zine2006/may06/06050603.jpg">A dead squirrel.</a> It looks like it died dancing.<br>
+<a href="../../../zine/zine2006/may06/06050605.jpg">A horse wearing a blindfold.</a><br>
+<a href="../../../zine/zine2006/may06/06050604.jpg">A modern gypsy dwelling.</a><br clear="all"></p>
 <p><h4>5th May</h4>
-<img src="zine/may06/san2.gif" align="right">
-I went to <a href="zine/may06/06050408.jpg">some jumps near my work</a>. I mainly rode <a href="zine/may06/06050405.jpg">this line</a>. Its a bit weird, you have to cut in halfway through, hop over a berm, pedal a bit, clear the first jump, break, the next set is a low racer, the next bowl is really tight, but you have to break a little bit in it, then clear the next set and break loads before the last big step up. I think mountain bikes must go slower.<a href="zine/may06/06050407.jpg">My bike is a mess.<br><br>
-<a href="zine/may06/06050304.jpg">Blossom</a> doesn't stay on the trees for very long. <a href="http://www.wearehomegrown.co.uk">Loop</a> doesn't like black thorn trees although the flowers are nice, but I think it is amazing. It grows so quickly and very thickly.<br><br>
+<img src="../../../zine/zine2006/may06/san2.gif" align="right">
+I went to <a href="../../../zine/zine2006/may06/06050408.jpg">some jumps near my work</a>. I mainly rode <a href="../../../zine/zine2006/may06/06050405.jpg">this line</a>. Its a bit weird, you have to cut in halfway through, hop over a berm, pedal a bit, clear the first jump, break, the next set is a low racer, the next bowl is really tight, but you have to break a little bit in it, then clear the next set and break loads before the last big step up. I think mountain bikes must go slower.<a href="../../../zine/zine2006/may06/06050407.jpg">My bike is a mess.<br><br>
+<a href="../../../zine/zine2006/may06/06050304.jpg">Blossom</a> doesn't stay on the trees for very long. <a href="http://www.wearehomegrown.co.uk">Loop</a> doesn't like black thorn trees although the flowers are nice, but I think it is amazing. It grows so quickly and very thickly.<br><br>
 I got my scanner working --><br><br>
 <a href="http://news.bbc.co.uk/1/hi/sci/tech/4782492.stm">Should really be walking by now.</a></p>
 <p><h4>4th May</h4>
@@ -138,7 +138,7 @@ I got my scanner working --><br><br>
 <p><h4>3rd May</h4>
 I have made a <a href="gallery/">gallery</a>. You can use it to put pictures on. Not sure if it will catch on, but its there if you want it...<br><a href="http://news.bbc.co.uk/1/hi/technology/4953620.stm">I think the entire world has gone mad</a></p>
 <p><h4>2nd May</h4>
-I made a page with pictures from the <a href="zine/may06/mayfair.php">May Fair</a>.</p>
+I made a page with pictures from the <a href="../../../zine/zine2006/may06/mayfair.php">May Fair</a>.</p>
 <p><h4>1st May</h4>
 <h5>Some new things:</h5>
 Someone made a Barend map. I have been waiting for someone to do something like this for years and I have drawn a lot of my own. <a href="http://www.prettyshady.com/06/jingle/map.html">It is amazing.</a><br><br>
