@@ -68,7 +68,7 @@ function over(text)
 		text = text + "<br>";
 		text = text + "<a href='http://www.scruffian.com/gallery/'>Gallery</a>";
 		text = text + "<br>";
-		text = text + "<a href='http://www.scruffian.com/news/archives.html'>Old News</a>";
+		text = text + "<a href='../../news/archives.html'>Old News</a>";
 		text = text + "<br>";
 		text = text + "<a href='http://www.scruffian.com/media/oldnews.htm'>Really Old News</a>";
 	}
