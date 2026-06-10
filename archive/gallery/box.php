@@ -1,3 +1,14 @@
+<?php
+$galleryDir = __DIR__;
+chdir($galleryDir);
+
+$sub = isset($_REQUEST["sub"]) && is_string($_REQUEST["sub"]) ? $_REQUEST["sub"] : ""; // Get the subdirectory from URL
+if ($sub !== "" && ($sub === "." || $sub === ".." || strpos($sub, "/") !== false || strpos($sub, "\\") !== false || !is_dir($sub))) {
+	$sub = "";
+}
+$files = array();
+$URL = "";
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -58,16 +69,17 @@
 ?>
 <div style="margin: auto; clear: both;">
 <?php
-$sub = $_REQUEST["sub"]; // Get the subdirectory from URL
 $ext = array("jpg", "png", "jpeg", "gif"); // These are the file extensions that will be displayed
-if(isset ($sub)) // This is what will happen if the subdirectory is set in the URL
+if($sub !== "") // This is what will happen if the subdirectory is set in the URL
 {
+	$files = array();
 	if ($handle = opendir($sub))
 	{
 		while ($file = readdir($handle)) // This reads the directory contents
 		{
 			$localpath = $sub."/".$file;
-			if (is_file($localpath))
+			$extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+			if (is_file($localpath) && in_array($extension, $ext))
 			{
 				$key = filemtime($localpath).md5($file);
 				$files[$key] = $file;
@@ -76,7 +88,7 @@ if(isset ($sub)) // This is what will happen if the subdirectory is set in the U
 
 		asort($files);
 		$myFile = "$sub/captions.txt";
-		$fh = fopen($myFile, 'r');
+		$fh = is_readable($myFile) ? fopen($myFile, 'r') : false;
 
 		foreach ($files as $file)
 		{
@@ -90,7 +102,7 @@ if(isset ($sub)) // This is what will happen if the subdirectory is set in the U
 						{
 							$filename = substr($file, 0, -strlen($extension));
 						}
-					$theData = fgets($fh);
+					$theData = $fh ? fgets($fh) : "";
 					?>
 					<div style="width: 100px; height: 100px; overflow: hidden; float: left; margin: 5px;">
 						<a href="<?php echo $sub."/".$file ?>" rel="lightbox[<?php echo $sub ?>]" title="<?=$theData?>">
