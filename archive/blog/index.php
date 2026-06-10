@@ -101,7 +101,7 @@ function SwitchLayers(layer)
 						<br />
 						<a href='http://www.scruffian.com/gallery/'>Gallery</a>
 						<br />
-						<a href='http://www.scruffian.com/news/archives.html'>Old News</a>
+						<a href='../news/archives.html'>Old News</a>
 						<br />
 						<a href='http://www.scruffian.com/media/oldnews.htm'>Really Old News</a>
 					</p>

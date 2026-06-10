@@ -1,228 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="http://www.movabletype.org/" />
-<title>Scruffian. Archives</title>
+  <meta charset="utf-8">
+  <title>Scruffian old news</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 12px;
+      margin: 0;
+    }
 
-<link rel="stylesheet" href="http://www.scruffian.com/news/styles-site.css" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.scruffian.com/news/index.rdf" />
-<link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.scruffian.com/news/atom.xml" />
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
 
+    a:hover {
+      color: #999;
+    }
+
+    img {
+      border: 0;
+    }
+
+    #page {
+      margin: 0 auto;
+      width: 800px;
+    }
+
+    #top {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    #banner {
+      display: block;
+      height: auto;
+      width: 800px;
+    }
+
+    #site-title {
+      bottom: 18px;
+      position: absolute;
+      right: 18px;
+    }
+
+    #nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 18px 0 26px;
+    }
+
+    #nav a {
+      display: inline-block;
+      height: 30px;
+      vertical-align: top;
+    }
+
+    h1,
+    h2 {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 0 24px;
+      padding: 0;
+    }
+
+    li {
+      line-height: 1.8;
+    }
+
+    #content {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: 1fr 220px;
+      padding-bottom: 40px;
+    }
+
+    #side {
+      color: #999;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var image = Math.floor(Math.random() * 20) + 1;
+      document.getElementById('banner').src = 'random/' + image + '.jpg';
+    });
+  </script>
 </head>
-
 <body>
-<div id="banner">
-<h1><a href="http://www.scruffian.com/news/" accesskey="1">Scruffian.</a> From the morning.</h1>
-</div>
-
-<div id="container">
-<div id="center">
-<div class="content">
-
-<h2>Archives</h2>
-<p>
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/2006/02/index.html">February 2006</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2006/01/index.html">January 2006</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/12/index.html">December 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/11/index.html">November 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/10/index.html">October 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/09/index.html">September 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/08/index.html">August 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/07/index.html">July 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/06/index.html">June 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/05/index.html">May 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/04/index.html">April 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/03/index.html">March 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/02/index.html">February 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/01/index.html">January 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2004/12/index.html">December 2004</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2004/11/index.html">November 2004</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2004/01/index.html">January 2004</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2003/12/index.html">December 2003</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2003/10/index.html">October 2003</a></li>
-
-</ul>
-</p>
-
-</div>
-</div>
-<div id="right">
-<div class="sidebar">
-
-<a href="http://www.scruffian.com/news/../index.html">Home</a><br>
-<a href="http://www.scruffian.com/news/../news.htm">News</a><br>
-<a href="http://www.scruffian.com/news/../messages.htm">Messages</a><br>
-<a href="http://www.scruffian.com/news/../media.htm">Media</a><br>
-<a href="http://www.scruffian.com/news/../links.htm">Links</a><br>
-<a href="http://www.prettyshady.com/supermegafunpartybook">Super book</a><br>
-<br>
-webcam:<br>
-<a href="http://www.scruffian.com/webcam.jpg"><img src="http://www.scruffian.com/webcam.jpg" width="132"></a>
-<br>
-<h2>Recent Entries</h2>
-
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/2006/02/bored.html">Bored</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2006/01/regina_spector.html">Regina Spector and other bits</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2006/01/gbh_job.html">GBH Job</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2006/01/new_gbh_parks_i.html">New GBH Parks in Wales</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2006/01/internet.html">Internet</a></li>
-
-</ul>
-
-<div id="categories">
-<h2>Categories</h2>
-
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/articles/index.html" title="">Articles</a>
-
-
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/articles/sharks/index.html" title="">Sharks</a>
-
-
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/articles/spiders/index.html" title="">Spiders</a>
-
-
-
-</li>
-</ul>
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/media/index.html" title="">Media</a>
-
-
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/media/bikes/index.html" title="">Bikes</a>
-
-
-
-</li>
-</ul>
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/news/index.html" title="">News</a>
-
-
-
-</li>
-
-
-<li>Reviews
-
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/reviews/bike_parts/index.html" title="">Bike parts</a>
-
-
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/reviews/films/index.html" title="">Films</a>
-
-
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/reviews/gigs/index.html" title="">Gigs</a>
-
-
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/reviews/music/index.html" title="">Music</a>
-
-
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/reviews/skateparks/index.html" title="">Skateparks</a>
-
-
-
-</li>
-
-
-<li><a href="http://www.scruffian.com/news/archives/reviews/tv/index.html" title="">TV</a>
-
-
-
-</li>
-</ul>
-
-</li>
-</ul>
-
-</div>
-
-<h2>Archives</h2>
-
-<ul>
-<li><a href="http://www.scruffian.com/news/archives/2006/02/index.html">February 2006</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2006/01/index.html">January 2006</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/12/index.html">December 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/11/index.html">November 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/10/index.html">October 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/09/index.html">September 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/08/index.html">August 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/07/index.html">July 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/06/index.html">June 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/05/index.html">May 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/04/index.html">April 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/03/index.html">March 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/02/index.html">February 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2005/01/index.html">January 2005</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2004/12/index.html">December 2004</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2004/11/index.html">November 2004</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2004/01/index.html">January 2004</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2003/12/index.html">December 2003</a></li>
-<li><a href="http://www.scruffian.com/news/archives/2003/10/index.html">October 2003</a></li>
-
-</ul>
- 
-<div class="link-note">
-<form method="get" action="http://www.scruffian.com/news/mt-search.cgi">
-<input type="hidden" name="IncludeBlogs" value="1" />
-<label for="search" accesskey="4">Search this site:</label><br />
-<input id="search" name="search" size="16" />
-<input type="submit" value="Search" /></form>
-</div>
-<div id="categories">
-<script type="text/javascript"><!--
-google_ad_client = "pub-6681503369454816";
-google_ad_width = 120;
-google_ad_height = 600;
-google_ad_format = "120x600_as";
-google_ad_channel ="";
-google_color_border = "ffffff";
-google_color_bg = "ffffff";
-google_color_link = "666666";
-google_color_url = "666666";
-google_color_text = "000000";
-//--></script>
-<script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
+  <div id="page">
+    <div id="top">
+      <img id="banner" src="random/1.jpg" width="800" height="415" alt="">
+
+      <a id="site-title" href="../index.html"><img src="scruffianonblack.gif" width="130" height="89" alt="Scruffian"></a>
+    </div>
+
+    <div id="nav">
+      <a href="archives.html"><img src="newsonblack.gif" width="65" height="30" alt="News"></a>
+      <a href="../messages.php"><img src="messagesonblack.gif" width="65" height="30" alt="Messages"></a>
+      <a href="../media/index.html"><img src="mediaonblack.gif" width="65" height="30" alt="Media"></a>
+      <a href="../links.htm"><img src="linksonblack.gif" width="65" height="30" alt="Links"></a>
+    </div>
+
+    <h1>Scruffian old news</h1>
+
+    <div id="content">
+      <main>
+        <h2>Archives</h2>
+        <ul>
+          <li><a href="../zine/zine2006/february06/index.html">February 2006</a></li>
+          <li><a href="../zine/zine2006/january06/index.html">January 2006</a></li>
+          <li><a href="../zine/zine2006/december05/december.html">December 2005</a></li>
+          <li><a href="../zine/zine2006/november05/index.html">November 2005</a></li>
+          <li><a href="../zine/zine2006/october05/index.html">October 2005</a></li>
+          <li><a href="../zine/zine2005/050908/050908.htm">September 2005</a></li>
+          <li><a href="../zine/zine2005/050820/050820.htm">August 2005</a></li>
+          <li><a href="../zine/zine2005/050718/050718.htm">July 2005</a></li>
+          <li><a href="../zine/zine2005/050609/050609.htm">June 2005</a></li>
+          <li><a href="../zine/zine2005/050516/050516.htm">May 2005</a></li>
+          <li><a href="../zine/zine2005/050404/050404.htm">April 2005</a></li>
+          <li><a href="../zine/zine2005/050314/050314.htm">March 2005</a></li>
+          <li><a href="../zine/zine2005/050221/050221.htm">February 2005</a></li>
+          <li><a href="../media/2005/050102dayinthelife/dayinthelife.htm">January 2005</a></li>
+          <li><a href="../media/2004/orangedecember04/041211.htm">December 2004</a></li>
+          <li><a href="../media/2004/november2004/novembernews.htm">November 2004</a></li>
+          <li><a href="../media/2004/january04/jan04.htm">January 2004</a></li>
+          <li><a href="../media/2003/december03/index.html">December 2003</a></li>
+          <li><a href="../media/2003/october03/index.html">October 2003</a></li>
+        </ul>
+      </main>
+
+      <div id="side">
+        <h2>Other old stuff</h2>
+        <ul>
+          <li><a href="../blog/index.php">2007 blog</a></li>
+          <li><a href="../zine/index.php">Zine</a></li>
+          <li><a href="../media/oldnews.htm">Really old news</a></li>
+          <li><a href="../">Archive home</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
