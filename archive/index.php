@@ -83,6 +83,8 @@ function over(text)
 		text = text + "<br>";
 		text = text + "<a href='./gallery/'>Gallery</a>";
 		text = text + "<br>";
+		text = text + "<a href='./trailslog/'>Trails Log</a>";
+		text = text + "<br>";
 		text = text + "<a href='./news/archives.html'>Old News</a>";
 		text = text + "<br>";
 		text = text + "<a href='./media/oldnews.htm'>Really Old News</a>";
