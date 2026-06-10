@@ -4,7 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Scruffian. Home.</title>
 <link href="december.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://www.trailscene.com/trailsband.js"> </script>
 <script>
 function over(text)
 {
@@ -112,25 +111,28 @@ function over(text)
 #header-pic
 {
 	<?php
-		$filename = '/home/thisis/public_html/'.date("md").'.jpg';
-		if (file_exists($filename))
-		{
-			$Image = date("md");
-		}
+			$Image = null;
+			$filename = __DIR__ . '/topimages/' . date("md") . '.jpg';
+			if (file_exists($filename))
+			{
+				$Image = date("md");
+			}
 		else
 		{
 			for($Loop = 0; $Loop < 365 ; $Loop++ )
 			{
-				$filename = '/home/thisis/public_html/banners/'.date("md", strtotime("+$Loop day")).'.jpg';
-				if (file_exists($filename))
-				{
-					$Image = date("md", strtotime("+$Loop day"));
-					break;
+					$filename = __DIR__ . '/topimages/' . date("md", strtotime("+$Loop day")) . '.jpg';
+					if (file_exists($filename))
+					{
+						$Image = date("md", strtotime("+$Loop day"));
+						break;
+					}
 				}
 			}
-		}
-	?>
-	background-image:url(banners/<?php echo $Image ?>.jpg);
+		?>
+		<?php if ($Image !== null) { ?>
+		background-image:url(topimages/<?php echo $Image ?>.jpg);
+		<?php } ?>
 }
 </style>
 </head>
@@ -151,7 +153,7 @@ function over(text)
 					<li><a href="javascript:over('design')">Design</a></li>
 					<li><a href="javascript:over('archive')">Archive</a></li>
 					<li><a href="javascript:over('links')">Links</a></li>
-					<li><a href="<?php echo $PHP_SELF ?>?page=contact">Contact</a></li>
+					<li><a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'ISO-8859-1') ?>?page=contact">Contact</a></li>
 				</ul>
 			</div>
 			<div id="right">
@@ -207,7 +209,7 @@ function over(text)
 					<?php
 
 					//define the path as relative
-					$path2 = "/home/thisis/public_html/photography";
+					$path2 = "./photography";
 
 					//using the opendir function
 					$dir_handle = @opendir($path2) or die("Unable to open $path2");
@@ -255,7 +257,7 @@ function over(text)
 					<?php
 
 					//define the path as relative
-					$path3 = "/home/thisis/public_html/music";
+					$path3 = "./music";
 
 					//using the opendir function
 					$dir_handle = @opendir($path3) or die("Unable to open $path3");
@@ -315,13 +317,13 @@ function over(text)
 				<div id="text">
 				<?php
 
-				$page = $_REQUEST["page"];
+				$page = $_REQUEST["page"] ?? "";
 				if( $page == "contact" )
 				{
 					if(!isset($_REQUEST["EMailAddress"]))
 					{
 						$include = "";
-						$include .= "<form action='$PHP_SELF?page=contact' method='post' name='FormName'>";
+						$include .= "<form action='" . htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'ISO-8859-1') . "?page=contact' method='post' name='FormName'>";
 						$include .= "If you have any questions please use this form to email me.";
 						$include .= "<p>Name: <br><input type='text' name='Name' size='48'></p>";
 						$include .= "<p>Email: <br><input type='text' name='EMailAddress' size='48'></p>";
