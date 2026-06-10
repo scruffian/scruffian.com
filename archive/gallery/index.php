@@ -1,15 +1,24 @@
 <?php
-$sub = $_REQUEST["sub"]; // Get the subdirectory from URL
+$galleryDir = __DIR__;
+chdir($galleryDir);
+
+$sub = isset($_REQUEST["sub"]) && is_string($_REQUEST["sub"]) ? $_REQUEST["sub"] : ""; // Get the subdirectory from URL
+if ($sub !== "" && ($sub === "." || $sub === ".." || strpos($sub, "/") !== false || strpos($sub, "\\") !== false || !is_dir($sub))) {
+	$sub = "";
+}
+$files = array();
+$URL = "";
 $ext = array("jpg", "jpeg", "gif"); // These are the file extensions that will be displayed
-if(isset ($sub)) // This is what will happen if the subdirectory is set in the URL
+if($sub !== "") // This is what will happen if the subdirectory is set in the URL
 {
 	if ($handle = opendir($sub))
 	{
 		while ($file = readdir($handle)) // This reads the directory contents
 		{
 			$localpath = $sub."/".$file;
- 
-			if (is_file($localpath))
+			$extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+
+			if (is_file($localpath) && in_array($extension, $ext))
 			{
 				$key = filemtime($localpath).md5($file);
 				$files[$key] = $file;
@@ -91,7 +100,7 @@ function moveObjLeft(img)
 }
 
 which_image_loaded = 0;
-NUMBER_OF_IMAGES = <?php echo (count($files)-1); ?>;
+NUMBER_OF_IMAGES = <?php echo count($files); ?>;
 
 ImageNames = new Object();
 ImageNames.length = NUMBER_OF_IMAGES - 1;
@@ -197,7 +206,7 @@ a:hover { background-color: #000000; color: #FFFFFF; }
 
 <body style="background-image: url(bg.jpg); background-position: 800px top; background-repeat: repeat-y; margin: 0;" 
 <?php
-if($sub)
+if($sub !== "")
 {
 ?>
 onload="javascript:Loaded();"
@@ -208,16 +217,16 @@ onload="javascript:Loaded();"
 <div style="position: relative; width:800px; height: 600px; float: left; margin: 0 10px 0 0;">
 	<div style="position: relative; height: 533px; width:800px;">
 		<?php
-		if($sub)
+		if($sub !== "")
 		{
 		?>
 		<div id="preload" style="display: none;"><img src="left.gif" /><img src="right.gif" /><img src="images/loading.gif" /></div>
 		<?php
 			$myFile = "$sub/captions.txt";
-			$fh = fopen($myFile, 'r');
+			$fh = is_readable($myFile) ? fopen($myFile, 'r') : false;
 			$Count = 1;
-			$Total = count($files)-1;
-			$Percent =  100 / $Total;
+			$Total = count($files);
+			$Percent = $Total > 0 ? 100 / $Total : 100;
 			foreach ($files as $file)
 			{
 				for($i=0;$i<sizeof($ext);$i++) 
@@ -231,7 +240,7 @@ onload="javascript:Loaded();"
 							$filename = substr($file, 0, -strlen($extension));
 							$path = $sub."/".$file;
 						}
-						$theData = fgets($fh);
+						$theData = $fh ? fgets($fh) : "";
 						echo "<div id=\"image".$Count."\" style=\"background-color: #000000; z-index: 0; left: -800px; position: absolute; top: 0px; width: 800px;\"><img align=\"right\" border=\"0\" hspace=\"0\" src=\"".$path."\" onload=\"javascript:Loading($Percent);\" /><div style=\"margin: 10px; position: absolute; right: 0px; bottom: 0px; \"><font style=\"background-color: #000000; color: #FFFFFF;\">$theData ($Count/$Total)</font></div></div>\r\n";
 						$Count++;
 					}
@@ -240,7 +249,7 @@ onload="javascript:Loaded();"
 		}
 		?>
 		<?php
-		if($sub)
+		if($sub !== "")
 		{
 			echo "<h1>".$sub."</h1>";
 		}
@@ -252,7 +261,7 @@ onload="javascript:Loaded();"
 		<!--<div id="black" style="z-index: 3; left: -800px; position: absolute; top: 0px; width: 800px;"><img height="533" width="800" align="baseline" border="0" hspace="0" src="black.jpg"></div>-->
 	</div>
 	<?php
-	if($sub)
+	if($sub !== "")
 	{
 	?>
 	<div id="total" style="position: relative; width: 100%; background-color:#ffffff; height: 18px;"><div id="percent" style="height: 18px; float: left; position: relative; width: 0%; background-color:#000000; color: #ffffff; text-align: right;"></div><div id="loading" style="color: #000000;">Loading...</div></div>
@@ -309,7 +318,7 @@ onload="javascript:Loaded();"
 	<br />
 	<br />
 	<?php
-	if($sub)
+	if($sub !== "")
 	{
 		$URL = "?sub=".$sub;
 	}
