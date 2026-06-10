@@ -28,12 +28,14 @@ li { float: left; width: 180px; margin: 0px 20px 0px 0px; padding: 0px; }
         cameraobscura</p>
 <?php
 
-$sub = $_REQUEST["sub"]; // Get the subdirectory from URL
+$sub = isset($_REQUEST["sub"]) && is_string($_REQUEST["sub"]) ? $_REQUEST["sub"] : ""; // Get the subdirectory from URL
+$validSub = $sub !== "" && $sub !== "." && $sub !== ".." && strpos($sub, "/") === false && strpos($sub, "\\") === false && is_dir($sub);
 
 $ext = array("jpg", "png", "jpeg", "gif"); // These are the file extensions that will be displayed
 
-if(isset ($sub)) // This is what will happen if the subdirectory is set in the URL
+if($validSub) // This is what will happen if the subdirectory is set in the URL
 {
+	$files = array();
 	if ($handle = opendir($sub))
 	{
 		while ($file = readdir($handle)) // This reads the directory contents
@@ -49,8 +51,7 @@ if(isset ($sub)) // This is what will happen if the subdirectory is set in the U
 		ksort($files);
 		foreach ($files as $file)
 		{
-			for($i=0;$i<sizeof($ext);$i++) 
-			if(stristr($file, ".".$ext[$i])) // Find out if the file extensions match those above NOT case sensitive.
+			if(in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), $ext)) // Find out if the file extensions match those above NOT case sensitive.
 			{
 					if ($file != "." && $file != "..") // Get rid of dot files
 					{
@@ -59,7 +60,9 @@ if(isset ($sub)) // This is what will happen if the subdirectory is set in the U
 						{
 							$filename = substr($file, 0, -strlen($extension));
 						}
-					echo "<img src='$sub/$file' alt='$filename'><br>$filename<br>";
+					$imgSrc = rawurlencode($sub)."/".rawurlencode($file);
+					$imgAlt = htmlspecialchars($filename, ENT_QUOTES, "UTF-8");
+					echo "<img src='$imgSrc' alt='$imgAlt'><br>$imgAlt<br>";
 					}
 			}
 		}
@@ -70,6 +73,7 @@ if(isset ($sub)) // This is what will happen if the subdirectory is set in the U
 	echo "<ul class='twocol'>";
 	if ($handle = opendir('.'))
 	{
+		$files = array();
 		while ($file = readdir($handle))
 		{
 			$localpath = $file;
@@ -87,13 +91,15 @@ if(isset ($sub)) // This is what will happen if the subdirectory is set in the U
 			{
 				if (is_dir($file))
 				{
-				echo "<li><a href='?sub=$file'>$file</a></li>";
+				$link = rawurlencode($file);
+				$title = htmlspecialchars($file, ENT_QUOTES, "UTF-8");
+				echo "<li><a href='?sub=$link'>$title</a></li>";
 				}
 			}
 		}
-   	}
-   	closedir($handle);
-   	echo "</ul>";
+		closedir($handle);
+	}
+	echo "</ul>";
 
 ?>
         </td>
