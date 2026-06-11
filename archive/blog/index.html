@@ -9,6 +9,13 @@
 #blog-content {
 	width: 600px;
 }
+#blog-content img {
+	max-width: 100%;
+	height: auto;
+}
+#right {
+	z-index: 200;
+}
 </style>
 <script>
 function isLocalBlogUrl(url)
@@ -61,15 +68,7 @@ function loadBlog(url)
 
 function blogArchiveHtml()
 {
-	var text;
-	text = "<h3>Blog Archive</h3>";
-	text = text + "<p><a href='blog/0705/index.html' onclick='return loadBlog(this.href)'>May 07</a><br>";
-	text = text + "<a href='blog/0704/index.html' onclick='return loadBlog(this.href)'>April 07</a><br>";
-	text = text + "<a href='blog/0703/index.html' onclick='return loadBlog(this.href)'>March 07</a><br>";
-	text = text + "<a href='blog/0702/index.html' onclick='return loadBlog(this.href)'>February 07</a><br>";
-	text = text + "<a href='blog/0701/index.html' onclick='return loadBlog(this.href)'>January 07</a></p>";
-	text = text + "<div id='blog-content'></div>";
-	return text;
+	return "<div id='blog-content'></div>";
 }
 
 function over(section)
@@ -226,6 +225,14 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href='photography/index.html?sub=070422'>Sunday 22 April</a></li>
 					</ul>
 				</div>
+				<h3>Archive</h3>
+				<ul class="features" id="features3">
+					<li><a href="blog/0705/index.html" onclick="return loadBlog(this.href)">May 07</a></li>
+					<li><a href="blog/0704/index.html" onclick="return loadBlog(this.href)">April 07</a></li>
+					<li><a href="blog/0703/index.html" onclick="return loadBlog(this.href)">March 07</a></li>
+					<li><a href="blog/0702/index.html" onclick="return loadBlog(this.href)">February 07</a></li>
+					<li><a href="blog/0701/index.html" onclick="return loadBlog(this.href)">January 07</a></li>
+				</ul>
 				<ul class="extras">
 					<li><a href="zine/zine2006/december06/index.html">December News</a></li>
 					<li><a href="media/2006/september/index.html">September Trails</a></li>
