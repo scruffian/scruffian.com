@@ -43,8 +43,15 @@ function resolveBlogAssetPaths(root, baseUrl)
 
 function loadBlog(url)
 {
+	if (!window.fetch) return true;
 	var target = document.getElementById('blog-content');
-	if (!target || !window.fetch) return true;
+	if (!target)
+	{
+		var text = document.getElementById('text');
+		if (!text) return true;
+		text.innerHTML = "<div id='blog-content'></div>";
+		target = document.getElementById('blog-content');
+	}
 	var blogUrl = new URL(url, document.baseURI).href;
 	target.innerHTML = '<p>Loading...</p>';
 	fetch(blogUrl)
@@ -68,7 +75,7 @@ function loadBlog(url)
 
 function blogArchiveHtml()
 {
-	return "<div id='blog-content'></div>";
+	return "<p>This used to be a blog. The archives are on the right</p>";
 }
 
 function over(section)
@@ -129,8 +136,7 @@ function over(section)
 	}
 	if(section == 'archive' )
 	{
-		text = blogArchiveHtml();
-		text = text + "<br>";
+		text = "";
 		text = text + "<a href='./media/index.htm'>Media</a>";
 		text = text + "<br>";
 		text = text + "<a href='cameraobscura/index.html'>Camera Obscura</a>";
@@ -172,10 +178,6 @@ function over(section)
 		text = text + "<h4><a href='dirtsurferuk/index.htm'>Dirtsurfer UK</a></h4> This is one of the first websites I made. It doesn't work too well at the moment because a lot of the pictures are missing. It was a pain to update.<br>";
 	}
 	document.getElementById('text').innerHTML = text;
-	if(section == 'archive' )
-	{
-		loadBlog('blog/0703/index.html');
-	}
 }
 </script>
 
@@ -185,7 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!SCRUFFIAN_HEADER_IMAGES.length) return;
   var el = document.getElementById('header-pic');
   el.style.backgroundImage = "url('" + SCRUFFIAN_HEADER_IMAGES[Math.floor(Math.random() * SCRUFFIAN_HEADER_IMAGES.length)] + "')";
-  loadBlog('blog/0703/index.html');
 });
 </script>
 </head>
@@ -203,28 +204,14 @@ document.addEventListener('DOMContentLoaded', function () {
 					<li><a href=".">Home</a></li>
 					<li><a href="javascript:over('about')">About</a></li>
 					<li><a href="messages.html">Messages</a></li>
-					<li><a href="javascript:over('design')">Design</a></li>
+					<li><a href="zine/index.html">Zine</a></li>
+					<li><a href="photography/index.html">Photography</a></li>
 					<li><a href="javascript:over('archive')">Archive</a></li>
 					<li><a href="javascript:over('links')">Links</a></li>
 					<li><a href="https://ben.blog/contact">Contact</a></li>
 				</ul>
 			</div>
 			<div id="right">
-				<h3><a href="zine/index.html">Zine</a></h3>
-				<ul class="features" id="features1">
-<li><a href='zine/070815Painting My Car/'>Painting My Car</a></li>
-<li><a href='zine/070719Orange Clouds/'>Orange Clouds</a></li>
-<li><a href='zine/070709Road Trip To Devon/'>Road Trip To Devon</a></li>
-					<li><a href="zine/">See more</a></li>
-				</ul>
-				<h3><a href="photography/index.html">Photography</a></h3>
-				<div>
-					<ul class="features" id="features2">
-<li><a href='photography/index.html?sub=070818'>Saturday 18 August</a></li>
-<li><a href='photography/index.html?sub=070605'>Tuesday 5 June</a></li>
-<li><a href='photography/index.html?sub=070422'>Sunday 22 April</a></li>
-					</ul>
-				</div>
 				<h3>Archive</h3>
 				<ul class="features" id="features3">
 					<li><a href="blog/0705/index.html" onclick="return loadBlog(this.href)">May 07</a></li>
