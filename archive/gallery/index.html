@@ -12,6 +12,7 @@
 Hmove=-800;
 which_image_loaded = 0;
 NUMBER_OF_IMAGES = 0;
+GALLERY_LOADED = false;
 
 function galleryName(name) {
 	return encodeURIComponent(name).replace(/%2F/g, '/');
@@ -109,9 +110,12 @@ function back()
 }
 
 function Loading(percent) {
+	if (GALLERY_LOADED) {
+		return;
+	}
 	var oldwidth;
 	oldwidth = document.getElementById('percent').style.width;
-	newidth = parseFloat(oldwidth) + percent;
+	newidth = Math.min(100, parseFloat(oldwidth) + percent);
 	displaywidth = Math.round(newidth);
 	document.getElementById('percent').style.width = newidth+'%';
 	document.getElementById('percent').innerHTML = displaywidth+'%';
@@ -119,6 +123,10 @@ function Loading(percent) {
 }
 
 function Loaded() {
+	if (GALLERY_LOADED) {
+		return;
+	}
+	GALLERY_LOADED = true;
 	document.getElementById('percent').style.width = '100%';
 	document.getElementById('percent').innerHTML = '100% Loaded';
 	document.getElementById('loading').innerHTML = '';
@@ -153,7 +161,7 @@ function renderGallery() {
 	document.getElementById('imageContainer').innerHTML = imageHtml + '<h1>' + (sub ? escapeHtml(sub) : 'Scruffian Image Vault') + '</h1>';
 	if (sub) {
 		document.getElementById('controls').style.display = 'block';
-		window.setTimeout(Loaded, 0);
+		window.onload = function() { Loaded(); };
 	}
 	var galleryList = '';
 	for (count = 0; count < galleries.length; count++) {
@@ -182,7 +190,7 @@ body.has-gallery a.current { background-color: #ffffff; color: #000000; }
 <div style="position: relative; width:800px; height: 600px; float: left; margin: 0 10px 0 0;">
 	<div id="imageContainer" style="position: relative; height: 533px; width:800px;"></div>
 	<div id="controls" style="display: none;">
-		<div id="total" style="position: relative; width: 100%; background-color:#ffffff; height: 18px;"><div id="percent" style="height: 18px; float: left; position: relative; width: 0%; background-color:#000000; color: #ffffff; text-align: right;"></div><div id="loading" style="color: #000000;">Loading...</div></div>
+		<div id="total" style="position: relative; width: 100%; background-color:#ffffff; height: 18px; overflow: hidden;"><div id="percent" style="height: 18px; float: left; position: relative; width: 0%; background-color:#000000; color: #ffffff; text-align: right;"></div><div id="loading" style="color: #000000;">Loading...</div></div>
 		<div style="margin: 5px 10px 0 0; width:800px; position: relative; z-index: 100; text-align: right;"><div id="help" style="float: left;">You can look at the pictures while they are loading</div>
 			<div id="next" style="float: right; width: 20px; height: 20px; margin: 0 5px 0 10px; visibility: visible;"><a  href="javascript:changeImage(1)" class="arrow"><img  src="right.gif" width="20" height="20" alt="right" border="0" /></a></div>
 			<div id="previous" style="width: 20px; height: 20px; float: right; visibility: hidden;"><a href="javascript:changeImage(-1);" class="arrow"><img src="left.gif" width="20" height="20" alt="left" border="0" /></a></div>
