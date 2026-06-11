@@ -1,343 +1,55 @@
-<!doctype html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scruffian Archive</title>
-<meta name="description" content="An archive of Scruffian: BMX trails, photography, zines, design projects, music, old news and odd bits.">
+<meta http-equiv="Content-Language" content="en-gb">
+<META name="description" content="Riding dirty bikes on dirty jumps: Pictures Videos and Design.">
+<META name="keywords" content="dirt, dirty, scruffy, trails, jumps, bike, bikes, bmx, music, food">
+
+<title>Scruffian. Archive 2002-2007.</title>
 <style>
-:root {
-  color-scheme: light;
-  --ink: #1d1d1d;
-  --muted: #66615a;
-  --paper: #f4f1e9;
-  --panel: rgba(255, 255, 255, .92);
-  --line: #c9c1b4;
-  --accent: #da9d00;
-  --red: #9f1f1f;
-}
 
-* {
-  box-sizing: border-box;
-}
+body         { margin:0; overflow:auto; border:0px none; font-family: georgia; margin-width: 0; margin-height: 0; border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px; }
+table        { font-family: georgia;}
+img			 { border: 0px solid #FFFFFF; color: #FFFFFF }
 
-html {
-  min-height: 100%;
-  font-family: Georgia, "Times New Roman", serif;
-  color: var(--ink);
-  background:
-    url("odd-bits/from%20public_html/bg.jpg") left top repeat-y,
-    var(--paper);
-}
+body         { color: #000000 }
+a            { text-decoration: none; font-weight: bold; }
+a:link       { color: #000000 }
+a:visited    { color: #000000 }
+a:active     { color: #000000 }
+a:hover      { color: #999999 }
 
-body {
-  margin: 0;
-  min-height: 100%;
-  background: url("odd-bits/from%20public_html/treeline.jpg") right bottom no-repeat fixed;
-}
-
-a {
-  color: inherit;
-}
-
-a:hover {
-  color: var(--accent);
-}
-
-.hero {
-  border-bottom: 8px solid #111;
-  background:
-    linear-gradient(to right, rgba(255, 255, 255, .96), rgba(255, 255, 255, .78) 42%, rgba(255, 255, 255, .18)),
-    url("odd-bits/from%20public_html/title.jpg") right center / auto 100% no-repeat,
-    url("odd-bits/from%20public_html/background.jpg") center top repeat;
-}
-
-.hero-inner,
-.content {
-  width: min(1060px, calc(100% - 28px));
-  margin: 0 auto;
-}
-
-.hero-inner {
-  min-height: 430px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 34px 0 38px;
-}
-
-.brand {
-  display: inline-flex;
-  width: fit-content;
-  margin-bottom: 58px;
-  padding: 12px 14px;
-  background: #fff;
-  border: 1px solid var(--line);
-}
-
-.brand img {
-  display: block;
-  width: 134px;
-  height: 44px;
-}
-
-h1 {
-  max-width: 720px;
-  margin: 0;
-  font-size: clamp(34px, 6vw, 72px);
-  line-height: .96;
-  letter-spacing: 0;
-}
-
-.intro {
-  max-width: 620px;
-  margin: 18px 0 0;
-  font-size: 19px;
-  line-height: 1.45;
-}
-
-.content {
-  padding: 28px 0 64px;
-}
-
-.top-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 30px;
-  font: 700 13px/1 Verdana, Arial, sans-serif;
-}
-
-.top-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 0 11px;
-  border: 1px solid #111;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-}
-
-.top-links a:hover {
-  color: var(--accent);
-}
-
-.section-title {
-  margin: 0 0 12px;
-  font: 700 14px/1.2 Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 14px;
-}
-
-.card {
-  grid-column: span 4;
-  min-height: 178px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  border-radius: 0;
-  background: var(--panel);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, .08);
-}
-
-.card.feature {
-  grid-column: span 6;
-  min-height: 230px;
-  background:
-    linear-gradient(rgba(255, 255, 255, .88), rgba(255, 255, 255, .88)),
-    url("odd-bits/from%20public_html/top.jpg") center top / cover no-repeat;
-}
-
-.card.dark {
-  border-color: #000;
-  background: #000;
-  color: #fff;
-  box-shadow: 4px 4px 0 rgba(159, 31, 31, .28);
-}
-
-.card.feature.dark {
-  background:
-    linear-gradient(rgba(0, 0, 0, .72), rgba(0, 0, 0, .9)),
-    url("odd-bits/from%20public_html/top.jpg") center top / cover no-repeat;
-}
-
-.card h2 {
-  margin: 0 0 8px;
-  font-size: 25px;
-  line-height: 1.08;
-  letter-spacing: 0;
-}
-
-.label-art {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 0 16px;
-}
-
-.card p {
-  margin: 0 0 16px;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.45;
-}
-
-.card.dark p {
-  color: #d8d3ca;
-}
-
-.card a.main {
-  font: 700 13px/1 Verdana, Arial, sans-serif;
-  text-decoration: none;
-}
-
-.card a.main::after {
-  content: " ->";
-}
-
-.card.photo {
-  background:
-    linear-gradient(rgba(255, 255, 255, .86), rgba(255, 255, 255, .86)),
-    url("odd-bits/from%20public_html/04091914.jpg") center / cover no-repeat;
-}
-
-.archive-note {
-  margin: 28px 0 0;
-  padding: 16px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, .78);
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-@media (max-width: 820px) {
-  .hero {
-    background:
-      linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .78)),
-      url("odd-bits/from%20public_html/title.jpg") right center / auto 100% no-repeat,
-      url("odd-bits/from%20public_html/background.jpg") center top repeat;
-  }
-
-  .hero-inner {
-    min-height: 390px;
-  }
-
-  .card,
-  .card.feature {
-    grid-column: span 12;
-  }
-
-  .intro {
-    font-size: 18px;
-  }
-}
 </style>
 </head>
+
 <body>
-<header class="hero">
-  <div class="hero-inner">
-    <a class="brand" href="index.html" aria-label="Scruffian archive home"><img src="odd-bits/from%20public_html/scruffian.gif" alt="Scruffian"></a>
-    <h1>Mud, bikes, photos, drawings and old web experiments.</h1>
-    <p class="intro">This is the preserved Scruffian archive: a snapshot of BMX trails, zines, photo galleries, design work, music, messages and stray pages from the mid-2000s.</p>
-  </div>
-</header>
-
-<main class="content">
-  <nav class="top-links" aria-label="Archive shortcuts">
-    <a href="index2.html">Old home</a>
-    <a href="about/index.html">About</a>
-    <a href="messages.html">Messages</a>
-    <a href="links.htm">Links</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <h2 class="section-title">Major sections</h2>
-  <section class="grid" aria-label="Major archive sections">
-    <article class="card feature zine">
-      <img class="label-art" src="odd-bits/from%20public_html/zine.gif" alt="Zine" width="98" height="36">
-      <p>Ride reports, digging days, trips, weather, photos and short updates from the trails.</p>
-      <a class="main" href="zine/index.html">Open the zine</a>
-    </article>
-
-    <article class="card feature dark media">
-      <img class="label-art" src="odd-bits/from%20public_html/mediaonblack.gif" alt="Gallery" width="65" height="30">
-      <p>Photo sets from trails, road trips, holidays, jams and everything that ended up in the camera.</p>
-      <a class="main" href="gallery/index.html">Browse galleries</a>
-    </article>
-
-    <article class="card photo">
-      <h2>Photography</h2>
-      <p>Standalone photo collections and older image experiments.</p>
-      <a class="main" href="photography/index.html">View photography</a>
-    </article>
-
-    <article class="card">
-      <h2>Media</h2>
-      <p>Older picture, video and miscellaneous media pages grouped by year.</p>
-      <a class="main" href="media/index.html">Open media</a>
-    </article>
-
-    <article class="card dark">
-      <img class="label-art" src="odd-bits/from%20public_html/scruffianonblack.gif" alt="" width="130" height="89">
-      <h2>Design</h2>
-      <p>Archived web design projects including Fitline, Pink Scales, Dirtsurfer UK and early BMX sites.</p>
-      <a class="main" href="design/index.html">See design work</a>
-    </article>
-
-    <article class="card">
-      <img class="label-art" src="odd-bits/from%20public_html/diggers.gif" alt="" width="200" height="44">
-      <h2>Trails Log</h2>
-      <p>Trail tours and logs from digging, riding and visiting spots around the country.</p>
-      <a class="main" href="trailslog/index.html">Read trails log</a>
-    </article>
-
-    <article class="card">
-      <h2>Blackmill Trails</h2>
-      <p>A preserved trails microsite with old sessions, pictures and trail pages.</p>
-      <a class="main" href="blackmilltrails/index.html">Visit Blackmill</a>
-    </article>
-
-    <article class="card">
-      <img class="label-art" src="odd-bits/from%20public_html/weblog.gif" alt="Blog" width="140" height="44">
-      <p>The later blog archive, with month-by-month posts from early 2007.</p>
-      <a class="main" href="blog/index.html">Open blog</a>
-    </article>
-
-    <article class="card dark">
-      <img class="label-art" src="odd-bits/from%20public_html/newsonblack.gif" alt="News" width="65" height="30">
-      <p>Old news pages and archives from earlier versions of the site.</p>
-      <a class="main" href="news/index.html">Read news</a>
-    </article>
-
-    <article class="card">
-      <h2>Odd Bits</h2>
-      <p>The previous splash page, design projects, diggers links and other leftover pages.</p>
-      <a class="main" href="odd-bits/index.html">Explore odd bits</a>
-    </article>
-
-    <article class="card">
-      <h2>Camera Obscura</h2>
-      <p>Another photo-heavy archive area with dated collections and travel sets.</p>
-      <a class="main" href="cameraobscura/index.html">Open Camera Obscura</a>
-    </article>
-
-    <article class="card">
-      <img class="label-art" src="odd-bits/from%20public_html/messages.gif" alt="" width="101" height="41">
-      <h2>Music</h2>
-      <p>Small audio odds and ends kept with the rest of the archive.</p>
-      <a class="main" href="music/index.html">Listen</a>
-    </article>
-  </section>
-
-  <p class="archive-note">The original archive homepage has been kept as <a href="index2.html">index2.html</a>. Many pages are preserved as static HTML, so some external links reflect the web as it was when the archive was made.</p>
-</main>
+<table border="0" cellpadding="9" cellspacing="10" align="center">
+  <tr>
+        <td width="100%" align="left" valign="top">
+          <h1>Scruffian.com Archive 2003-2007</h1>
+          <p>This relic was rescued from a server hack. Expect broken links and images.</p>
+          <a class="main" href="media/index.html">Media (2003-2006)</a><br>This was the main media section of the site from the beginning, so it has the earliest stuff on it.<br><br>
+          <a class="main" href="zine/index.html">Zine</a><br>Having fun messing around with different designs.<br><br>
+          <a class="main" href="news/index.html">News (2003-2006)</a><br>My early attempts at blogging without blogging software.<br><br>
+          <a class="main" href="blog/index.html">Blog (2007)</a><br>A later blog that did actually have some custom CMS behind it.<br><br>
+          <a class="main" href="gallery/index.html">Gallery (2006-2007)</a><br>Photos from a bit later once I had learnt what I was doing a bit more.<br><br>
+          <a class="main" href="photography/index.html">Photography (2007)</a><br>Mostly just photo dumps, generated by PHP.<br><br>
+          <a class="main" href="cameraobscura/index.html">Camera Obscura (2006)</a><br>Slightly more obscure photography experiments.<br><br>
+          <a class="main" href="design/index.html">Design</a><br>A record of the sites I was working on at the time - some still work!<br><br>
+          <a class="main" href="trailslog/index.html">Trailslog</a><br>This was a secret log of the trails, but it's probably safe to share now!<br><br>
+        </td>
+  </tr>
+  </table>
+  </center>
+</div>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
