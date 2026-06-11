@@ -1,46 +1,51 @@
-body {	background-color: #643F00;
+body {
+	background-color: #643f00;
 	font-family: "Georgia", "Times New Roman", Times, serif;
 	font-size: 1em;
-	margin-top: 0em;
-	margin-right: 0em;
-	margin-bottom: 0em;
-	margin-left: 0em
-	}
-table	{
-	padding: 0px;
-	spacing: 0px;
-	}
-td, th {
-	font-family: "Georgia", "Times New Roman", Times, serif;	font-size: 1em;
-	font-size: 1em
-	}
-a	{
+	margin: 0;
+}
+
+table {
+	padding: 0;
+	border-spacing: 0;
+}
+
+td,
+th {
+	font-family: "Georgia", "Times New Roman", Times, serif;
+	font-size: 1em;
+}
+
+a {
 	color: #ffffff;
-	}
-a:hover	{
+}
+
+a:hover {
 	color: #ffff00;
-	}
+}
+
 #banner {
-	align: center;
 	width: 548px;
 	height: 144px;
-        background-image: url(../mybmxfamily.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-	}
-#bmxlinks{
-	color: FFFFFF;
-	}
-#white
-	{
-	background-color: FFFFFF;
-	color: 000000;
-	}
-#white	a
-	{
+	background-image: url(../mybmxfamily.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+#bmxlinks {
+	color: #ffffff;
+}
+
+#white {
+	background-color: #ffffff;
 	color: #000000;
-	}
-#white	a:hover
-	{
+}
+
+#white a {
+	color: #000000;
+}
+
+#white a:hover {
 	color: #999999;
-	}
+}

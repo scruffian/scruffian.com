@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Author" content="Ben Dwyer" />
+<meta name="Description" content="Gallery" />
+<meta name="Keywords" content="images" />
+<meta name="robots" content="index,follow" />
+<title>Scruffian Image Vault</title>
+<script type="text/javascript" src="gallery-data.js" charset="iso-8859-1"></script>
+<script type="text/javascript">
+Hmove=-800;
+which_image_loaded = 0;
+NUMBER_OF_IMAGES = 0;
+GALLERY_LOADED = false;
+
+function galleryName(name) {
+	return encodeURIComponent(name).replace(/%2F/g, '/');
+}
+
+function escapeHtml(value) {
+	return String(value || '').replace(/[&<>\"]/g, function(character) {
+		return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[character];
+	});
+}
+
+function currentSub() {
+	var params = new URLSearchParams(window.location.search);
+	var sub = params.get('sub') || '';
+	return DATA[sub] ? sub : '';
+}
+
+function moveImgRight(img)
+{
+	Hmove = document.getElementById(img).style.left;
+	Hmove = parseInt(Hmove);
+	Hmove = Hmove + 800;
+	document.getElementById(img).style.left=Hmove+"px";
+}
+
+function moveImgLeft(img)
+{
+	Hmove = document.getElementById(img).style.left;
+	Hmove = parseInt(Hmove);
+	Hmove = Hmove - 800;
+	document.getElementById(img).style.left=Hmove+"px";
+}
+
+function moveObjRight(img)
+{
+	Hmove = document.getElementById(img).style.left;
+	Hmove = parseInt(Hmove);
+	Hmove = Hmove + 800;
+	document.getElementById(img).style.left=Hmove+"px";
+	if(Hmove<0)
+	{
+		window.setTimeout("moveObjRight('"+img+"')", 100);
+	}
+}
+
+function moveObjLeft(img)
+{
+	Hmove = document.getElementById(img).style.left;
+	Hmove = parseInt(Hmove);
+	Hmove = Hmove - 800;
+	document.getElementById(img).style.left = Hmove+"px";
+	if(Hmove>-801)
+	{
+		window.setTimeout("moveObjLeft('"+img+"')", 100);
+	}
+}
+
+function changeImage(direction) {
+	which_image_loaded += direction;
+	if (which_image_loaded == 1)
+	{
+		document.getElementById('previous').style.visibility = "hidden";
+	}
+	else
+	{
+		document.getElementById('previous').style.visibility = "visible";
+	}
+	if (which_image_loaded == NUMBER_OF_IMAGES )
+	{
+		document.getElementById('next').style.visibility = "hidden";
+	}
+	else
+	{
+		document.getElementById('next').style.visibility = "visible";
+	}
+
+	if(direction > 0)
+	{
+		var image;
+		image = 'image'+which_image_loaded;
+		moveImgRight(image);
+	}
+	if(direction < 0)
+	{
+		var image;
+		image = 'image'+(which_image_loaded+1);
+		moveImgLeft(image);
+	}
+}
+
+function back()
+{
+	moveObjRight('black');
+	window.setTimeout("changeImage(-1);", 250);
+}
+
+function Loading(percent) {
+	if (GALLERY_LOADED) {
+		return;
+	}
+	var oldwidth;
+	oldwidth = document.getElementById('percent').style.width;
+	newidth = Math.min(100, parseFloat(oldwidth) + percent);
+	displaywidth = Math.round(newidth);
+	document.getElementById('percent').style.width = newidth+'%';
+	document.getElementById('percent').innerHTML = displaywidth+'%';
+	document.getElementById('loading').innerHTML = '&nbsp;Loaded';
+}
+
+function Loaded() {
+	if (GALLERY_LOADED) {
+		return;
+	}
+	GALLERY_LOADED = true;
+	document.getElementById('percent').style.width = '100%';
+	document.getElementById('percent').innerHTML = '100% Loaded';
+	document.getElementById('loading').innerHTML = '';
+	document.getElementById('loading').style.display = 'none';
+	document.getElementById('help').innerHTML = '';
+	changeImage(1);
+	setTimeout("document.getElementById('percent').innerHTML = '';",1000)
+}
+
+if (document.images)
+{
+	preload_image = new Image(20,20);
+	preload_image.src="left.gif";
+	preload_image.src="right.gif";
+}
+
+function renderGallery() {
+	var sub = currentSub();
+	document.body.className = sub ? 'has-gallery' : '';
+	var galleries = Object.keys(DATA);
+	var files = sub ? DATA[sub] : [];
+	var imageHtml = '';
+	var count;
+	NUMBER_OF_IMAGES = files.length;
+	for (count = 0; count < files.length; count++) {
+		var image = files[count];
+		var caption = escapeHtml(image.caption || '');
+		var imageNumber = count + 1;
+		var percent = files.length ? (100 / files.length) : 100;
+		imageHtml += '<div id="image' + imageNumber + '" style="background-color: #000000; z-index: 0; left: -800px; position: absolute; top: 0px; width: 800px;"><img align="right" border="0" hspace="0" src="' + galleryName(sub) + '/' + galleryName(image.file) + '" onload="javascript:Loading(' + percent + ');" /><div style="margin: 10px; position: absolute; right: 0px; bottom: 0px; "><font style="background-color: #000000; color: #FFFFFF;">' + caption + ' (' + imageNumber + '/' + files.length + ')</font></div></div>\r\n';
+	}
+	document.getElementById('imageContainer').innerHTML = imageHtml + '<h1>' + (sub ? escapeHtml(sub) : 'Scruffian Image Vault') + '</h1>';
+	if (sub) {
+		document.getElementById('controls').style.display = 'block';
+		window.onload = function() { Loaded(); };
+	}
+	var galleryList = '';
+	for (count = 0; count < galleries.length; count++) {
+		var gallery = galleries[count];
+		galleryList += '<li><a href="index.html?sub=' + galleryName(gallery) + '"' + (gallery === sub ? ' class="current"' : '') + '>' + escapeHtml(gallery) + '</a></li>';
+	}
+	document.getElementById('galleryList').innerHTML = galleryList;
+	var url = sub ? '?sub=' + galleryName(sub) : '';
+	document.getElementById('scrollLink').href = 'scroll.html' + url;
+	document.getElementById('boxLink').href = 'box.html' + url;
+}
+</script>
+<style>
+* { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 1em; color: #000000; margin: 0; padding: 0; }
+h1 { font-size: 2em; letter-spacing: -0.1em; opacity: .20; filter: alpha(opacity=20); z-index: 30; position: absolute; padding: 0px; }
+a:hover { background-color: #000000; color: #FFFFFF; }
+body.has-gallery * { color: #ffffff; }
+body.has-gallery { background-color: #000000; color: #FFFFFF; }
+body.has-gallery a { text-decoration: none; outline: none; padding: 0 2px; margin: 2px 0; }
+body.has-gallery a:hover { background-color: #FFFFFF; color: #000000; }
+body.has-gallery a:hover.arrow { background-color: #000000; }
+body.has-gallery a.current { background-color: #ffffff; color: #000000; }
+</style>
+</head>
+<body style="background-image: url(bg.jpg); background-position: 800px top; background-repeat: repeat-y; margin: 0;">
+<div style="position: relative; width:800px; height: 600px; float: left; margin: 0 10px 0 0;">
+	<div id="imageContainer" style="position: relative; height: 533px; width:800px;"></div>
+	<div id="controls" style="display: none;">
+		<div id="total" style="position: relative; width: 100%; background-color:#ffffff; height: 18px; overflow: hidden;"><div id="percent" style="height: 18px; float: left; position: relative; width: 0%; background-color:#000000; color: #ffffff; text-align: right;"></div><div id="loading" style="color: #000000;">Loading...</div></div>
+		<div style="margin: 5px 10px 0 0; width:800px; position: relative; z-index: 100; text-align: right;"><div id="help" style="float: left;">You can look at the pictures while they are loading</div>
+			<div id="next" style="float: right; width: 20px; height: 20px; margin: 0 5px 0 10px; visibility: visible;"><a  href="javascript:changeImage(1)" class="arrow"><img  src="right.gif" width="20" height="20" alt="right" border="0" /></a></div>
+			<div id="previous" style="width: 20px; height: 20px; float: right; visibility: hidden;"><a href="javascript:changeImage(-1);" class="arrow"><img src="left.gif" width="20" height="20" alt="left" border="0" /></a></div>
+		</div>
+	</div>
+&nbsp;</div>
+<div style="position: relative; height: 650px;">
+	<a href="../index.html">Home</a> | <a href="../messages.html">Messages</a>  | <a href="https://ben.blog/contact">Contact</a><br /><br />
+	<h2>Galleries:</h2>
+	<ul id="galleryList" style="list-style-type: none;"></ul>
+	<br />
+	<br />
+	<br />
+	<p align="right">
+		<a id="scrollLink" href="scroll.html">change to scrolling view</a><br />
+		<a id="boxLink" href="box.html">change to thumbnail view</a>
+	</p>
+</div>
+<script type="text/javascript">renderGallery();</script>
+</body>
+</html>

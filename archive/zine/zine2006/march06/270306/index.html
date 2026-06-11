@@ -1,0 +1,21 @@
+<html><head><meta http-equiv="Content-Language" content="en-gb"><title>scruffian</title><style>
+
+body         { margin:0; overflow:auto; border:0px none; font-family: georgia; font-size: 8pt; margin-width: 0; margin-height: 0; border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px }
+table        { font-size: 8pt; font-family: georgia; }
+img			 { border: 0px solid #FFFFFF; color: #FFFFFF }
+
+body         { color: #ffffff }
+a            { font-size: 18pt; text-decoration: none;}
+a:link       { color: #ffffff }
+a:visited    { color: #ffffff }
+a:active     { color: #ffffff }
+a:hover      { color: #000000 }
+
+</style></head><body bgcolor="#999966"><table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="100%" height="100%"><tr><td width="100%" align="center"><table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="790" height="590"><tr><td rowspan="2" valign="top" align="right"><br><a href="?image=01">tree</a><br>
+<a href="?image=02">march</a><br>
+<a href="?image=03">pine</a><br>
+<a href="?image=04">geese</a><br>
+<a href="?image=05">fence</a><br>
+<a href="?image=06">hedge</a><br></td><td id="photo" width="640" height="480" bgcolor="#FFFFFF"><img border="0" src="frame.gif" width="640" height="480"></td></tr><tr><td id="desc" width="640" align="center" valign="top"></td></tr></table></td></tr></table><script>
+var DATA={"01":{"name":"tree","desc":"i expect this could probably be ridden if it wasnt in front of someones house","file":"06030101.jpg"},"02":{"name":"march","desc":"looks like march","file":"06030102.jpg"},"03":{"name":"pine","desc":"","file":"06030103.jpg"},"04":{"name":"geese","desc":"i had to make noises to make them look up instead of burying thier heads in their wings","file":"06030104.jpg"},"05":{"name":"fence","desc":"","file":"06030105.jpg"},"06":{"name":"hedge","desc":"","file":"06030106.jpg"}};var image=new URLSearchParams(location.search).get('image')||Object.keys(DATA)[0];var item=DATA[image]||DATA[Object.keys(DATA)[0]];document.getElementById('photo').style.backgroundImage='url('+item.file+')';document.getElementById('desc').textContent=item.desc;
+</script></body></html>
