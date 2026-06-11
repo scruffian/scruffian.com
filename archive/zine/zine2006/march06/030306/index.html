@@ -1,0 +1,29 @@
+<html><head><meta http-equiv="Content-Language" content="en-gb"><title>scruffian</title><style>
+
+body         { margin:0; overflow:auto; border:0px none; font-family: georgia; font-size: 8pt; margin-width: 0; margin-height: 0; border-top-width:0px; border-right-width:0px; border-bottom-width:0px; border-left-width:0px }
+table        { font-size: 8pt; font-family: georgia; }
+img			 { border: 0px solid #FFFFFF; color: #FFFFFF }
+
+body         { color: #ffffff }
+a            { }
+a:link       { color: #ffffff }
+a:visited    { color: #ffffff }
+a:active     { color: #ffffff }
+a:hover      { color: #999999 }
+
+</style></head><body bgcolor="#999966"><table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="100%" height="100%"><tr><td width="100%" align="center"><table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse" width="790" height="590"><tr><td rowspan="2" valign="top" align="right"><br><a href="?image=01">waterfall</a><br>
+<a href="?image=02">ford</a><br>
+<a href="?image=03">horse</a><br>
+<a href="?image=04">home</a><br>
+<a href="?image=05">camp</a><br>
+<a href="?image=06">house</a><br>
+<a href="?image=07">gate</a><br>
+<a href="?image=08">view</a><br>
+<a href="?image=09">close up</a><br>
+<a href="?image=10">lane</a><br>
+<a href="?image=11">dead end</a><br>
+<a href="?image=12">hills</a><br>
+<a href="?image=13">gypsy</a><br>
+<a href="?image=14">truck</a><br></td><td id="photo" width="640" height="480" bgcolor="#FFFFFF"><img border="0" src="frame.gif" width="640" height="480"></td></tr><tr><td id="desc" width="640" align="center" valign="top"></td></tr></table></td></tr></table><script>
+var DATA={"01":{"name":"waterfall","desc":"i think this used to be part of a watermill","file":"06021701.jpg"},"02":{"name":"ford","desc":"you dont get many fords these days","file":"06021702.jpg"},"03":{"name":"horse","desc":"this is a gypsy horse i think. i am becoming obsessed with gypsies.","file":"06021703.jpg"},"04":{"name":"home","desc":"gypsy house","file":"06021704.jpg"},"05":{"name":"camp","desc":"why do they all seem to have trampolines?","file":"06021705.jpg"},"06":{"name":"house","desc":"there seems to be some building work going on. i know, i am obsessed.","file":"06021706.jpg"},"07":{"name":"gate","desc":"","file":"06021707.jpg"},"08":{"name":"view","desc":"","file":"06021708.jpg"},"09":{"name":"close up","desc":"","file":"06021709.jpg"},"10":{"name":"lane","desc":"i walked up this small lane. it was very long.","file":"06021710.jpg"},"11":{"name":"dead end","desc":"at the end of the lane was this house. it is so big that it has its own telephone box.","file":"06021711.jpg"},"12":{"name":"hills","desc":"","file":"06021712.jpg"},"13":{"name":"gypsy","desc":"this is my local gypsy moving tyres","file":"06021713.jpg"},"14":{"name":"truck","desc":"and here he is driving his truck thing","file":"06021714.jpg"}};var image=new URLSearchParams(location.search).get('image')||Object.keys(DATA)[0];var item=DATA[image]||DATA[Object.keys(DATA)[0]];document.getElementById('photo').style.backgroundImage='url('+item.file+')';document.getElementById('desc').textContent=item.desc;
+</script></body></html>
