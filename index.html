@@ -10,10 +10,10 @@
 
 			input { border: none; background: #eee; color: #5fb2ce; font: inherit; padding: 5px; width: auto;}
 			input:focus { outline-color: #5fb2ce; }
-            input[type=submit] { background: #5fb2ce; color: #fff; }
+            input[type=submit] { background: #5fb2ce; color: #fff; padding-left: 1em; padding-right: 1em; }
 			h1,h2,h3,legend { font-size: 2em; font-weight: normal; line-height: 1.2; }
 			p { margin-bottom: 1em; }
-			h2 { color: #ccc; font-style: italic; }
+			h2 { color: #999; font-size: 1.5em; }
 			section { border-bottom: 1px solid #333; margin-bottom: 1em; padding-bottom: 1em; }
 			a { color: #5fb2ce; text-decoration: none; }
 			a:hover { color: lightblue; }
@@ -25,12 +25,13 @@
 			.site-title { color: #5fb2ce; display: block; margin-top: 0.5em; }
 			.site-description { color: #666; display: block; }
 			.site:hover .site-description { color: #333; }
+			.newsletter { margin-top: 6em; }
 		</style>
 	</head>
 	<body>
 		<h1><a href="https://scruffian.com">scruffian</a></h1>
-      <p>definition: a scruffy ruffian.</p>
-      <h2>Projects</h2>
+    	<p><i>a scruffy ruffian.</i></p>
+    	<h2>Projects</h2>
 		<div class="sites">
 			<a class="site" href="http://music.scruffian.com">
 				<img src="https://s0.wp.com/mshots/v1/http%3A%2F%2Fmusic.scruffian.com" alt="music.scruffian.com screenshot" loading="lazy">
@@ -40,30 +41,30 @@
 			<a class="site" href="https://haiku.blog">
 				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fhaiku.blog" alt="haiku.blog screenshot" loading="lazy">
 				<span class="site-title">haiku.blog</span>
-				<span class="site-description">A haiku every day.</span>
+				<span class="site-description">A new day a new haiku.</span>
 			</a>
 			<a class="site" href="https://1005songs.wordpress.com/">
 				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2F1005songs.wordpress.com%2F" alt="1005songs.wordpress.com screenshot" loading="lazy">
 				<span class="site-title">1005songs.wordpress.com</span>
-				<span class="site-description">An attempt to write 1005 songs.</span>
+				<span class="site-description">Writing 1005 songs.</span>
 			</a>
 			<a class="site" href="https://strawdio.com">
 				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fstrawdio.com" alt="strawdio.com screenshot" loading="lazy">
 				<span class="site-title">strawdio.com</span>
-				<span class="site-description">A garden recording studio made from straw bales.</span>
+				<span class="site-description">A recording studio made from straw bales.</span>
 			</a>
 			<a class="site" href="https://ben.blog">
 				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fben.blog" alt="ben.blog screenshot" loading="lazy">
 				<span class="site-title">ben.blog</span>
 				<span class="site-description">My WordPress</span>
 			</a>
-			<a class="site" href="/archive">
+			<a class="site" href="archive">
 				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fscruffian.com%2Farchive" alt="scruffian.com archive screenshot" loading="lazy">
 				<span class="site-title">Archive</span>
 				<span class="site-description">2002 - 2007</span>
 			</a>
 		</div>
-<h2>Tools</h2>
+		<h2>Tools</h2>
 		<div class="sites">
 			<a class="site" href="https://sync.bible">
 				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fsync.bible" alt="sync.bible screenshot" loading="lazy">
@@ -78,14 +79,14 @@
 
 		</div>
 
-		<div id="mc_embed_shell">
+		<div id="mc_embed_shell" class="newsletter">
 			<div id="mc_embed_signup">
 				<form action="https://scruffian.us10.list-manage.com/subscribe/post?u=36266bdb05687b5696c67c804&amp;id=243c598550&amp;f_id=007cbee5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
 
 					<div id="mc_embed_signup_scroll">
 						<div class="mc-field-group">
-							<p>If you would like to receive an email from me put your address <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="in this box">
-							<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="and click this button">
+							<p>Sign up for email updates: <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="email@address.com">
+							<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="and click this button"></p>
 						</div>
 						<div id="mce-responses" class="clear foot">
 							<div class="response" id="mce-error-response" style="display: none;"></div>
