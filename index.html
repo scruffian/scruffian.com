@@ -14,68 +14,99 @@
 			h1,h2,h3,legend { font-size: 2em; font-weight: normal; line-height: 1.2; }
 			p { margin-bottom: 1em; }
 			h2 { color: #999; font-size: 1.5em; }
-			section { border-bottom: 1px solid #333; margin-bottom: 1em; padding-bottom: 1em; }
 			a { color: #5fb2ce; text-decoration: none; }
 			a:hover { color: lightblue; }
+			:root { --site-gap: 1em; --site-width: 220px; --site-column-width: calc((var(--site-width) * 2) + var(--site-gap)); --project-column-width: calc((var(--site-width) * 3) + (var(--site-gap) * 2)); }
+			.layout { display: grid; gap: 1.5em; grid-template-columns: var(--site-width) minmax(var(--site-width), var(--project-column-width)) minmax(var(--site-width), var(--site-column-width)); justify-content: center; }
+			.column { min-width: 0; }
+			.intro p { margin-top: 0.25em; }
 			.contact { margin: 1em; }
-			.sites { display: flex; flex-wrap: wrap; gap: 1.5em 1em; margin: 1.5em 0; }
-			.site { color: #333; display: block; font-size: 0.85em; line-height: 1.35; max-width: 100%; width: 220px; }
+			.sites { display: grid; gap: 1.5em var(--site-gap); grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--site-width)), var(--site-width))); margin: 1.5em 0; max-width: var(--site-column-width); }
+			.projects .sites { max-width: var(--project-column-width); }
+			.tools { margin-left: 2em; }
+			.site { color: #333; display: block; font-size: 0.85em; line-height: 1.35; max-width: 100%; }
 			.site:hover { color: #5fb2ce; }
-			.site img { background: #f5f5f5; display: block; height: auto; width: 100%; }
+			.site img { background: #f5f5f5; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); display: block; height: auto; width: 100%; }
 			.site-title { color: #5fb2ce; display: block; margin-top: 0.5em; }
 			.site-description { color: #666; display: block; }
 			.site:hover .site-description { color: #333; }
-			.newsletter { margin-top: 6em; }
+			.newsletter { display: flex; justify-content: center; margin-top: 6em; text-align: center; }
+			.newsletter p { align-items: center; display: flex; flex-wrap: wrap; gap: 0.5em; justify-content: center; margin-bottom: 0; }
+			@media (max-width: 1330px) {
+				.layout { grid-template-columns: minmax(0, var(--project-column-width)); }
+				.tools { margin-left: 0; margin-top: 2em; }
+			}
+			@media (max-width: 520px) {
+				.newsletter input { width: 100%; }
+			}
 		</style>
 	</head>
 	<body>
-		<h1><a href="https://scruffian.com">scruffian</a></h1>
-    	<p><i>a scruffy ruffian.</i></p>
-    	<h2>Projects</h2>
-		<div class="sites">
-			<a class="site" href="http://music.scruffian.com">
-				<img src="https://s0.wp.com/mshots/v1/http%3A%2F%2Fmusic.scruffian.com" alt="music.scruffian.com screenshot" loading="lazy">
-				<span class="site-title">music.scruffian.com</span>
-				<span class="site-description">Music on Bandcamp.</span>
-			</a>
-			<a class="site" href="https://haiku.blog">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fhaiku.blog" alt="haiku.blog screenshot" loading="lazy">
-				<span class="site-title">haiku.blog</span>
-				<span class="site-description">A new day a new haiku.</span>
-			</a>
-			<a class="site" href="https://1005songs.wordpress.com/">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2F1005songs.wordpress.com%2F" alt="1005songs.wordpress.com screenshot" loading="lazy">
-				<span class="site-title">1005songs.wordpress.com</span>
-				<span class="site-description">Writing 1005 songs.</span>
-			</a>
-			<a class="site" href="https://strawdio.com">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fstrawdio.com" alt="strawdio.com screenshot" loading="lazy">
-				<span class="site-title">strawdio.com</span>
-				<span class="site-description">A recording studio made from straw bales.</span>
-			</a>
-			<a class="site" href="https://ben.blog">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fben.blog" alt="ben.blog screenshot" loading="lazy">
-				<span class="site-title">ben.blog</span>
-				<span class="site-description">My WordPress</span>
-			</a>
-			<a class="site" href="archive">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fscruffian.com%2Farchive" alt="scruffian.com archive screenshot" loading="lazy">
-				<span class="site-title">Archive</span>
-				<span class="site-description">2002 - 2007</span>
-			</a>
-		</div>
-		<h2>Tools</h2>
-		<div class="sites">
-			<a class="site" href="https://sync.bible">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fsync.bible" alt="sync.bible screenshot" loading="lazy">
-				<span class="site-title">sync.bible</span>
-				<span class="site-description">A JavaScript Bible study tool.</span>
-			</a>
-			<a class="site" href="https://offrhyme.com">
-				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Foffrhyme.com" alt="offrhyme.com screenshot" loading="lazy">
-				<span class="site-title">offrhyme.com</span>
-				<span class="site-description">An offline rhyming dictionary.</span>
-			</a>
+		<div class="layout">
+			<header class="column intro">
+				<h1><a href="https://scruffian.com">scruffian</a></h1>
+	    		<p><i>a scruffy ruffian.</i></p>
+			</header>
+			<section class="column projects">
+		    	<h2>Projects</h2>
+				<div class="sites">
+					<a class="site" href="http://music.scruffian.com">
+						<img src="https://s0.wp.com/mshots/v1/http%3A%2F%2Fmusic.scruffian.com" alt="music.scruffian.com screenshot" loading="lazy">
+						<span class="site-title">music.scruffian.com</span>
+						<span class="site-description">Music on Bandcamp</span>
+					</a>
+					<a class="site" href="https://haiku.blog">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fhaiku.blog" alt="haiku.blog screenshot" loading="lazy">
+						<span class="site-title">haiku.blog</span>
+						<span class="site-description">A new day a new haiku</span>
+					</a>
+					<a class="site" href="https://1005songs.wordpress.com/">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2F1005songs.wordpress.com%2F" alt="1005songs.wordpress.com screenshot" loading="lazy">
+						<span class="site-title">1005songs.wordpress.com</span>
+						<span class="site-description">Writing 1005 songs</span>
+					</a>
+					<a class="site" href="https://strawdio.com">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fstrawdio.com" alt="strawdio.com screenshot" loading="lazy">
+						<span class="site-title">strawdio.com</span>
+						<span class="site-description">A recording studio made from straw bales</span>
+					</a>
+					<a class="site" href="https://ben.blog">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fben.blog" alt="ben.blog screenshot" loading="lazy">
+						<span class="site-title">ben.blog</span>
+						<span class="site-description">My WordPress</span>
+					</a>
+					<a class="site" href="trailslog">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fscruffian.com%2Ftrailslog" alt="scruffian.com trailslog screenshot" loading="lazy">
+						<span class="site-title">trailslog</span>
+						<span class="site-description">2002 - 2007</span>
+					</a>
+					<a class="site" href="https://www.flickr.com/photos/scruffian/albums/">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fscruffian%2Falbums%2F" alt="flickr.com/photos/scruffian/albums screenshot" loading="lazy">
+						<span class="site-title">Flickr</span>
+						<span class="site-description">2004 - 2014</span>
+					</a>
+					<a class="site" href="https://wearemountainhares.com/">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwearemountainhares.com%2F" alt="wearemountainhares.com screenshot" loading="lazy">
+						<span class="site-title">wearemountainhares.com</span>
+						<span class="site-description">We Are Mountain Hares</span>
+					</a>
+				</div>
+			</section>
+			<section class="column tools">
+				<h2>Tools</h2>
+				<div class="sites">
+					<a class="site" href="https://sync.bible">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fsync.bible" alt="sync.bible screenshot" loading="lazy">
+						<span class="site-title">sync.bible</span>
+						<span class="site-description">A JavaScript Bible study tool</span>
+					</a>
+					<a class="site" href="https://offrhyme.com">
+						<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Foffrhyme.com" alt="offrhyme.com screenshot" loading="lazy">
+						<span class="site-title">offrhyme.com</span>
+						<span class="site-description">An offline rhyming dictionary</span>
+					</a>
+				</div>
+			</section>
 		</div>
 
 		<div id="mc_embed_shell" class="newsletter">
@@ -85,7 +116,7 @@
 					<div id="mc_embed_signup_scroll">
 						<div class="mc-field-group">
 							<p>Sign up for email updates: <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="email@address.com">
-							<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="and click this button"></p>
+							<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="email me!"></p>
 						</div>
 						<div id="mce-responses" class="clear foot">
 							<div class="response" id="mce-error-response" style="display: none;"></div>
