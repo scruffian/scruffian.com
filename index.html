@@ -5,43 +5,78 @@
 		<meta name="google-site-verification" content="GZrBinKaN7OiaKePvaXOqTjze3__3pXxS3Rt4A528f8" />
 		<title>scruffian.com: a scruffy ruffian</title>
 		<style>
-			@font-face {
-				font-family: 'Scruffian';
-				src: url('fonts/Scruffian-Regular.woff2') format('woff2'),
-				     url('fonts/Scruffian-Regular.ttf') format('truetype');
-				font-weight: normal;
-				font-style: normal;
-			}
 			* { margin: 0; padding: 0; }
-			body { font-family: 'Scruffian', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-			body { color: #333; font-size: 32px; padding: 5vw; word-wrap: break-word; }
+			body { color: #333; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 20px; line-height: 1.45; padding: 5vw; word-wrap: break-word; }
 
-			input { font-family: 'Scruffian'; border: none; background: #fff; color: #5fb2ce; font-size: 1em; padding: 5px; width: auto;}
+			input { border: none; background: #eee; color: #5fb2ce; font: inherit; padding: 5px; width: auto;}
 			input:focus { outline-color: #5fb2ce; }
-			h1,h2,h3,legend { font-size: 2em; font-weight: normal; line-height: 1.4em; }
+            input[type=submit] { background: #5fb2ce; color: #fff; }
+			h1,h2,h3,legend { font-size: 2em; font-weight: normal; line-height: 1.2; }
 			p { margin-bottom: 1em; }
 			h2 { color: #ccc; font-style: italic; }
 			section { border-bottom: 1px solid #333; margin-bottom: 1em; padding-bottom: 1em; }
 			a { color: #5fb2ce; text-decoration: none; }
 			a:hover { color: lightblue; }
 			.contact { margin: 1em; }
+			.sites { display: flex; flex-wrap: wrap; gap: 1.5em 1em; margin: 1.5em 0; }
+			.site { color: #333; display: block; font-size: 0.85em; line-height: 1.35; max-width: 100%; width: 220px; }
+			.site:hover { color: #5fb2ce; }
+			.site img { background: #f5f5f5; display: block; height: auto; width: 100%; }
+			.site-title { color: #5fb2ce; display: block; margin-top: 0.5em; }
+			.site-description { color: #666; display: block; }
+			.site:hover .site-description { color: #333; }
 		</style>
 	</head>
 	<body>
-		<h1><a href="https://scruffian.com">scruffian</a></h1><p>definition: a scruffy ruffian.</p>
-		<p>I like making things.</p>
+		<h1><a href="https://scruffian.com">scruffian</a></h1>
+      <p>definition: a scruffy ruffian.</p>
+      <h2>Projects</h2>
+		<div class="sites">
+			<a class="site" href="http://music.scruffian.com">
+				<img src="https://s0.wp.com/mshots/v1/http%3A%2F%2Fmusic.scruffian.com" alt="music.scruffian.com screenshot" loading="lazy">
+				<span class="site-title">music.scruffian.com</span>
+				<span class="site-description">Music on Bandcamp.</span>
+			</a>
+			<a class="site" href="https://haiku.blog">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fhaiku.blog" alt="haiku.blog screenshot" loading="lazy">
+				<span class="site-title">haiku.blog</span>
+				<span class="site-description">A haiku every day.</span>
+			</a>
+			<a class="site" href="https://1005songs.wordpress.com/">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2F1005songs.wordpress.com%2F" alt="1005songs.wordpress.com screenshot" loading="lazy">
+				<span class="site-title">1005songs.wordpress.com</span>
+				<span class="site-description">An attempt to write 1005 songs.</span>
+			</a>
+			<a class="site" href="https://strawdio.com">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fstrawdio.com" alt="strawdio.com screenshot" loading="lazy">
+				<span class="site-title">strawdio.com</span>
+				<span class="site-description">A garden recording studio made from straw bales.</span>
+			</a>
+			<a class="site" href="https://ben.blog">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fben.blog" alt="ben.blog screenshot" loading="lazy">
+				<span class="site-title">ben.blog</span>
+				<span class="site-description">My WordPress</span>
+			</a>
+			<a class="site" href="/archive">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fscruffian.com%2Farchive" alt="scruffian.com archive screenshot" loading="lazy">
+				<span class="site-title">Archive</span>
+				<span class="site-description">2002 - 2007</span>
+			</a>
+		</div>
+<h2>Tools</h2>
+		<div class="sites">
+			<a class="site" href="https://sync.bible">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fsync.bible" alt="sync.bible screenshot" loading="lazy">
+				<span class="site-title">sync.bible</span>
+				<span class="site-description">A JavaScript Bible study tool.</span>
+			</a>
+			<a class="site" href="https://offrhyme.com">
+				<img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Foffrhyme.com" alt="offrhyme.com screenshot" loading="lazy">
+				<span class="site-title">offrhyme.com</span>
+				<span class="site-description">An offline rhyming dictionary.</span>
+			</a>
 
-		<p>I like to make music. Some of my music is on <a href="http://music.scruffian.com">bandcamp</a> and <a href="https://open.spotify.com/artist/3Y2huBWdJsh7QpBrXZq4H3?si=yNVO7UR1Rcqckt-TJmA2OQ">spotify</a>. Music is fun, that's why it's played.</p>
-
-		<p>I write <a href="https://haiku.blog">a haiku every day</a>. Some of them grow up into songs.</p>
-
-		<p>I am trying to write <a href="https://1005songs.wordpress.com/">1005 songs</a>.</p>
-
-		<p>I have made <a href="https://strawdio.com">a recording studio in my garden out of straw bales</a>. The photos aren't all there yet but it's done honest!</p>
-
-		<p>I make a <a href="https://sync.bible">javascript bible study tool</a> and an <a href="https://offrhyme.com">offline rhyming dictionary</a>.</p>
-
-		<p>I have a blog at <a href="https://ben.blog">ben.blog</a> where you can <a href="https://ben.blog/contact">contact me</a>.</p>
+		</div>
 
 		<div id="mc_embed_shell">
 			<div id="mc_embed_signup">
