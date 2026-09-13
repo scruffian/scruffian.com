@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="GZrBinKaN7OiaKePvaXOqTjze3__3pXxS3Rt4A528f8" />
+		<title>scruffian.com: a scruffy ruffian</title>
+		<style>
+			* { margin: 0; padding: 0; }
+			body { color: #333; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 20px; line-height: 1.45; padding: 5vw; word-wrap: break-word; }
+			h1, h2 { font-weight: 100; margin-top: 2rem; }
+			.page { max-width: 60rem; margin-inline: auto; }
+			video {
+				/* override other styles to make responsive */
+				width: 100%    !important;
+				height: auto   !important;
+			}
+
+			.masonry {
+				--gutter: 0.25em;
+				--flow-space: var(--gutter);
+				--switcher-target-container-width: 28rem;
+			}
+
+			.masonry img {
+				width: 100%;
+			}
+
+			.switcher {
+				display: flex;
+				flex-wrap: wrap;
+				gap: var(--gutter, 1em);
+				align-items: var(--switcher-vertical-alignment, flex-start);
+			}
+
+				.switcher > * {
+				flex-grow: 1;
+				flex-basis: calc(
+					(var(--switcher-target-container-width, 40rem) - 100%) * 999
+				);
+			}
+
+			.flow > * + * {
+				margin-block-start: var(--flow-space, 1em);
+			}
+
+			.wrapper {
+				margin-inline: auto;
+				padding-inline: var(--gutter);
+			}
+
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+		<h1>About</h1>
+		<p>Since January 2024, scruffian has written a song every day. That's 1000 songs. Weaving intricate finger-picking patterns with melancholy melodies and reflective lyrics, these songs act as a kind of diary, tracking the ups and downs of the last few years. They are songs of the sun, the rain, the river, the wild; songs of hope, fear, joy, sadness and love.</p>
+
+		<h2>Photos</h2>
+		<div class="masonry wrapper switcher">
+			<!-- Column 1 -->
+			<div class="flow">
+				<a href="7561.jpg"><img src="7561.jpg" /></a>
+				<a href="070502508.jpeg"><img src="070502508.jpeg" /></a>
+				<a href="462440405_1079740563851803_2151327886735436141_n.jpg"><img src="462440405_1079740563851803_2151327886735436141_n.jpg" /></a>
+				<a href="PXL_20240527_133922638.jpg"><img src="PXL_20240527_133922638.jpg" /></a>
+				<a href="eccl photos 578.jpg"><img src="eccl photos 578.jpg" /></a>
+				<a href="Jun 2018 249.jpg"><img src="Jun 2018 249.jpg" /></a>
+			</div>
+
+			<!-- Column 2 -->
+			<div class="flow">
+				<a href="photo_2023-06-29 17.20.10 (1).jpeg"><img src="photo_2023-06-29 17.20.10 (1).jpeg" /></a>
+				<a href="15378534724_428aa9d31f_o.jpg"><img src="15378534724_428aa9d31f_o.jpg" /></a>
+				<a href="PXL_20240527_133928124.jpg"><img src="PXL_20240527_133928124.jpg" /></a>
+				<a href="PXL_20240529_190902685.jpg"><img src="PXL_20240529_190902685.jpg" /></a>
+				<a href="PXL_20250525_152724907.MP.jpg"><img src="PXL_20250525_152724907.MP.jpg" /></a>
+				<a href="team51betsorgmeetup2023-kgagne-10.jpg"><img src="team51betsorgmeetup2023-kgagne-10.jpg" /></a>
+				<a href="photo_2025-11-20 23.40.43.jpeg"><img src="photo_2025-11-20 23.40.43.jpeg" /></a>
+			</div>
+
+			<!-- Column 3 -->
+			<div class="flow">
+				<a href="PXL_20250130_202258635.MP.jpg"><img src="PXL_20250130_202258635.MP.jpg" /></a>
+				<a href="photo_2025-11-20 23.32.29.jpeg"><img src="photo_2025-11-20 23.32.29.jpeg" /></a>
+				<a href="photo_2023-06-29 17.20.10.jpeg"><img src="photo_2023-06-29 17.20.10.jpeg" /></a>
+				<a href="1960758_849704413633_2805995868275684310_o.jpg"><img src="1960758_849704413633_2805995868275684310_o.jpg" /></a>
+				<a href="10286769_10152055215561230_7775762274013957962_o.jpg"><img src="10286769_10152055215561230_7775762274013957962_o.jpg" /></a>
+				<a href="10494357_10153162965671490_2264795031138827218_o.jpg"><img src="10494357_10153162965671490_2264795031138827218_o.jpg" /></a>
+			</div>
+		</div>
+
+		<h2>Videos</h2>
+		<p>There are lots of videos on <a href="https://1005songs.wordpress.com">1005 songs</a></p>
+		<video src="video.mp4" type="video/mp4" controls></video>
+		<div class="videoWrapper">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/r1qzhilfaU4?si=-yusLG0KeJ-EzBre" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+
+		</div>
+	</body>
+</html>
